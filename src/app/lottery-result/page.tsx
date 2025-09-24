@@ -1,0 +1,1 @@
+export {default} from "@/view/page/lottery-result/Index";

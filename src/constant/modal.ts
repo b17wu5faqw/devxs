@@ -1,0 +1,18 @@
+export const MODAL = {
+  LOGIN: "login",
+  REGISTER: "register",
+  CONFIRM: "confirm",
+  SUCCESS: "success",
+  SUCCESS_QUOTA: 'success-quota',
+  ERROR: "error",
+  GAME: "game",
+  GAME_LO: "game-lo",
+  NETWORK_ERROR: "network-kerror",
+  INFO_MOBILE: "info-mobile",
+  LOTTO_TYPE: "lotto-type",
+  LO_XIEN: "lo-xien",
+  LO_XIEN_CONFIRM: "lo-xien-confirm",
+  LO_TRUOT: "lo-truot",
+  LO_TRUOT_CONFIRM: "lo-truot-confirm",
+  MAKE_TRANSFER: "make-transfer",
+};

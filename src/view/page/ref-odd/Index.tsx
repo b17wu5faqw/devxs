@@ -1,0 +1,10 @@
+"use client";
+import useDetect from "@/hooks/useDetect";
+import HomeDesktop from "./desktop/RefOdd";
+
+const Index = () => {
+  const { isMobile } = useDetect();
+  if (!isMobile) return <HomeDesktop />;
+};
+
+export default Index;

@@ -1,0 +1,645 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #e4e4e4;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .topMenu {
+    margin-left: 150px;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    margin-top: 22px;
+    font-size: 13px;
+  }
+
+  .topMenu li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float: left;
+    height: 18px;
+  }
+
+  .topMenu li a {
+    float: left;
+    padding: 0 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .icon-transfer {
+    background: url(/images/main/icon_transfer.svg) no-repeat center bottom;
+    background-size: 100%;
+  }
+
+  .icon-transfer:hover {
+    background-position: top;
+  }
+
+  .icon-service {
+    background: url(/images/main/icon_service.svg) no-repeat center top;
+    background-size: 100%;
+  }
+
+  .icon-service:hover {
+    background-position: bottom;
+  }
+
+  .secondMenu {
+    display: flex;
+  }
+
+  .secondMenu .btn_heart,
+  .secondMenu .btn_message,
+  .btn_clear {
+    position: relative;
+  }
+
+  .active {
+    background-color: #ffefa7 !important;
+  }
+
+  .secondMenu .btn_heart:after {
+    background: url("/images/common/icon_AnchorList_off.svg") no-repeat top;
+    content: "";
+    background-size: 100%;
+    width: 17px;
+    height: 15px;
+    top: 3px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  .secondMenu .btn_heart:hover:after {
+    background: url("/images/common/icon_AnchorList_on.svg") no-repeat top;
+  }
+
+  .secondMenu .btn_message:after {
+    background: url("/images/common/btn_inforMail.svg") no-repeat top;
+    content: "";
+    background-size: 100%;
+    width: 18px;
+    height: 13px;
+    top: 3px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  .secondMenu .btn_message:hover:after {
+    background: url(/images/common/btn_inforMail.svg) no-repeat bottom;
+    height: 14px;
+  }
+
+  .secondMenu .btn_clear:after {
+    background: url("/images/common/btn_clear.svg") no-repeat top;
+    content: "";
+    background-size: 100%;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  .secondMenu .btn_clear:hover:after {
+    background: url(/images/common/btn_clear.svg) no-repeat bottom;
+  }
+
+  .secondMenu .btn_setting:after {
+    background: url("/images/common/btn_setting_pc.svg") no-repeat top;
+    content: "";
+    background-size: 100%;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  .secondMenu .btn_setting:hover:after {
+    background: url(/images/common/btn_setting_pc.svg) no-repeat bottom;
+  }
+
+  .secondMenu .btn_righticon:after {
+    background: url("/images/common/btn_volume.svg") no-repeat top;
+    content: "";
+    background-size: 100%;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  .secondMenu .btn_righticon:hover:after {
+    background: url(/images/common/btn_volume.svg) no-repeat bottom;
+  }
+
+  .secondMenu .btn_webLine:after {
+    background: url("/images/common/btn_webLine_blue.svg") no-repeat top;
+    content: "";
+    background-size: 100%;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  .secondMenu .btn_webLine:hover:after {
+    background: url(/images/common/btn_webLine_blue.svg) no-repeat bottom;
+  }
+
+  .listShow {
+    background: url(/images/main/icon_listShow.svg) no-repeat center;
+    background-size: 18px 18px;
+    width: 50px;
+    height: 35px;
+    float: left;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .btn_leftMenu_switch {
+    background: url(/images/main/btn_arrow_w.svg) no-repeat center;
+    background-size: 20px 20px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    width: 40px;
+    height: 35px;
+    float: right;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+
+  .leftIcon {
+    width: 50px;
+    float: left;
+    position: relative;
+    height: 33px;
+  }
+
+  .arrowUTw {
+    background: url(/images/main/icon_mainarrowUp.svg) no-repeat center;
+    background-size: 20px auto;
+  }
+
+  .time {
+    display: block;
+    background: url(/images/common/bg_time.svg) no-repeat center;
+    background-size: 100%;
+    width: 40px;
+    height: 28px;
+    line-height: 28px;
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .btn-submenu {
+    text-decoration: none;
+    width: 96px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background: url(/images/lotto/btn_submenu.png) no-repeat;
+  }
+
+  .btn_change {
+    position: relative;
+    display: block;
+    width: 80px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid rgb(196, 196, 196);
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    background: url(/images/common/icon_mainarrow_up.svg) 54px center / 16%
+      no-repeat rgb(239, 239, 239);
+    margin-right: 12px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .btn_changeBox {
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 460px;
+    border: 1px solid rgb(196, 196, 196);
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 10px;
+    z-index: 99;
+  }
+
+  .result table tr {
+    background-color: #86bbf2;
+    cursor: pointer;
+  }
+
+  .result table tr:nth-child(2n + 1) {
+    background-color: #b9d6f5;
+  }
+
+  table td {
+    text-align: center;
+    height: 28px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+  }
+
+  .result table td:nth-child(2) {
+    border-left: 1px solid #fff;
+  }
+
+  .Now2 td {
+    color: #fff;
+    font-weight: bold;
+    background: url(/images/lotto/btn_arrowL.svg) no-repeat center left 20px
+      #106eb6;
+  }
+
+  .period-box table tr {
+    background-color: #dbdbdb;
+  }
+
+  .period-box table tr:nth-child(2n + 1) {
+    background-color: #f3f3f3;
+  }
+
+  .color_blue {
+    color: #007eff;
+  }
+
+  .chip_close {
+    background: url(/images/main/icon_arrowUp.png) no-repeat top;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 8px;
+    z-index: 2;
+    background-size: 100%;
+    width: 13px;
+    height: 8px;
+    cursor: pointer;
+  }
+  .betlistChip {
+    width: 85%;
+    height: 47px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .betlistChip div {
+    position: relative;
+    width: 48px;
+    height: 40px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    background-size: 56px 42px;
+    background-position: center;
+  }
+  .icon_chip_1 {
+    background-image: url(/images/main/icon_chip1.png);
+    color: #533a8d !important;
+  }
+  .chip_Text span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+  }
+  .icon_chip_5 {
+    background-image: url(/images/main/icon_chip5.png);
+    color: #2265a1 !important;
+  }
+  .icon_chip_10 {
+    background-image: url(/images/main/icon_chip10.png);
+    color: #76177a !important;
+  }
+  .icon_chip_100 {
+    background-image: url(/images/main/icon_chip100.png);
+    color: #6b7b29 !important;
+  }
+  .icon_chip_500 {
+    background-image: url(/images/main/icon_chip500.png);
+    color: #005b4a !important;
+  }
+  .icon_chip_1000 {
+    background-image: url(/images/main/icon_chip1K.png);
+    color: #a81046 !important;
+  }
+  .color_red {
+    color: #fb1c22;
+  }
+  .chatroom_box {
+    position: absolute;
+    top: 36px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+    box-sizing: border-box;
+  }
+  .chatroom_mask {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 3;
+  }
+  .chatroom_mask.connecting {
+    display: block;
+  }
+  .chatroom_mask img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .chatroomT {
+    height: 39px;
+    line-height: 39px;
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    z-index: 3;
+  }
+  .chatroom_mask span {
+    color: #efefef;
+    position: absolute;
+    top: 47%;
+    width: 100%;
+    left: 0px;
+  }
+  .frontP {
+    position: relative;
+    display: block;
+    font-weight: bold;
+    float: left;
+    width: 50px;
+    height: 28px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+  }
+  .selected .frontP {
+    background: url(/images/main/icon_checkR.svg) no-repeat center;
+    background-size: 30%;
+  }
+  .todayTime {
+    color: #888;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .selected .todayTime {
+    color: #007fff;
+  }
+  .allChipBox {
+    display: none;
+    position: absolute;
+    top: -1px;
+    margin: auto;
+    left: -1px;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+    width: 180px !important;
+    border: #cccccc 1px solid;
+    cursor: pointer;
+  }
+  .allChipBox div {
+    width: 48px;
+    height: 40px;
+    cursor: pointer;
+    background-size: 56px 42px;
+    background-position: center;
+  }
+  .allChipBox .chipBoxItem {
+    padding-top: 3px;
+    width: 85%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .chip_Text {
+    position: relative;
+  }
+  .allChipBox div:last-child {
+    margin-bottom: 6px;
+  }
+  .chipWraps:hover .allChipBox {
+    display: block;
+  }
+  .chipWraps:hover .chip_close {
+    background: url(/images/main/icon_arrowUp.png) no-repeat bottom;
+  }
+  .highlight {
+    color: #106eb6;
+    font-weight: bold;
+  }
+  .drawing {
+    background-image: url(/images/main/04-3.gif);
+    width: 42px;
+    margin-bottom: -5px;
+    height: 22px;
+    display: inline-block;
+  }
+  .hiding {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .showing {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  .topMenu li a.btn_rightMenu {
+    padding-right: 30px;
+    position: relative;
+  }
+  .topMenuItem.btn_infor.hover .change_dropdown {
+    display: block;
+  }
+  .topMenuItem {
+    float: left;
+    padding-left: 15px;
+    height: 28px;
+    color: #fff;
+  }
+  .change_dropdown {
+    color: #000;
+    width: 100%;
+    font-size: 13px;
+    position: absolute;
+    z-index: 399;
+    border-radius: 4px;
+    list-style-type: none;
+    top: 28px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+    display: none;
+  }
+  .change_dropdown li {
+    width: 100%;
+    border: none;
+    padding: 0px;
+    height: 30px;
+    margin: 0px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .change_dropdown li span {
+    background-color: #f9f9f9;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+    height: 30px;
+    text-decoration: none;
+    width: 100%;
+    color: #333333;
+    cursor: pointer;
+    text-align: center;
+  }
+  #loading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.46);
+    z-index: 11;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .loadingImg {
+    width: 80px;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .topMenuItem .btn_rightMenu::after {
+    content: "";
+    background: url(/images/main/icon_mainarrow.svg) no-repeat;
+    background-size: 16px 16px;
+    opacity: 0.3;
+    top: 4px;
+    right: 8px;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+  }
+  .topMenuItem.hover .btn_rightMenu::after {
+    opacity: 1;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .btn_showIcon {
+    background: url(/images/main/icon_showden.svg) no-repeat top;
+    background-size: 100%;
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+  .btn_showIcon.icon_repeat {
+    background: url(/images/main/icon_reapet.svg) no-repeat top;
+    background-size: 100%;
+    -webkit-animation: betShipRepeat 2s infinite steps(1, start);
+  }
+  @keyframes betShipRepeat {
+    0% {
+      background: url(/images/main/icon_reapet.svg) no-repeat top;
+      background-size: 100%;
+    }
+    50% {
+      background: url(/images/main/icon_showden_on.svg) no-repeat top;
+      background-size: 100%;
+    }
+  }
+}
