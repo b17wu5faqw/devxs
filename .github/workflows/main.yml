@@ -1,0 +1,52 @@
+name: CI/CD (Ubuntu + PM2)
+
+on:
+  push:
+    branches: ["production"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: SSH into server & deploy
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER || 'root' }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT || '22' }}
+          script: |
+            set -e
+            APP_DIR="${{ secrets.APP_DIR || '/root/code/dev-xs' }}"
+            cd "$APP_DIR"
+
+            echo "[0] load nvm (nếu có)"
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+            echo "[1] versions"
+            echo "PATH=$PATH"
+            command -v node || true
+            command -v npm  || true
+            node -v
+            npm -v
+
+            echo "[1/6] GIT PULL"
+            git fetch origin
+            git checkout production
+            git pull
+
+            echo "[2/6] NODE VERSION (PATH: $PATH)"
+            command -v node || echo "node not in PATH"
+            node -v && npm -v
+
+            echo "[3/6] INSTALL"
+            npm i
+
+            echo "[4/6] BUILD"
+            # Nếu Next.js
+            npm run build
+
+            echo "[5/6] MIGRATIONS (nếu có)"
+            pm2 reload dev-xs
