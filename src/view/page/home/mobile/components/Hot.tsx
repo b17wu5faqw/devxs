@@ -11,11 +11,7 @@ function Hot() {
   const user = useAuthStore((s) => s.user);
 
   const handleGameClick = () => {
-    if (user?.agency_id === 1) {
-      openModal(MODAL.GAME_LO);
-    } else {
-      openModal(MODAL.NETWORK_ERROR);
-    }
+    openModal(MODAL.GAME_LO);
   };
 
   return (
