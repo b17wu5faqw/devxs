@@ -1712,7 +1712,7 @@ const VnLottoElec = () => {
         </Flex>
       )}
       <PopupInfoMobile duplicates={duplicates} onConfirm={handleClose} />
-      <ConfirmMobile
+      <PopupConfirmMobile
         drawName={currentDraw?.name ?? ""}
         drawId={currentDraw?.id ?? 0}
         drawNo={currentDraw?.draw_no ?? ""}
@@ -1726,7 +1726,6 @@ const VnLottoElec = () => {
         rate={subType?.rate ? Number(subType.rate) : 0}
         prizeRate={subType?.prize_rate ? Number(subType.prize_rate) : 0}
         totalPrize={totalPrize}
-        drawCount={drawCount}
         disabled={isSubmitting}
         onConfirm={handleConfirm}
       />
