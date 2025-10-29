@@ -408,7 +408,7 @@ const VnLotto = () => {
   };
 
   const handleClose = async () => {
-    closeModal(MODAL.INFO_MOBILE);
+    closeModal();
     openModal(MODAL.CONFIRM);
   };
 
@@ -433,7 +433,7 @@ const VnLotto = () => {
       setTotalChip(0);
       setSelectedNumbers([]);
       setResetCombination(true);
-      closeModal(MODAL.CONFIRM);
+      closeModal();
 
       setTimeout(() => {
         setResetCombination(false);
@@ -1525,6 +1525,7 @@ const VnLotto = () => {
         drawId={currentDraw?.id ?? 0}
         drawNo={currentDraw?.draw_no ?? ""}
         subtypeId={subType?.id ?? 0}
+        inputType={subType?.input_type ?? 1}
         maxBet={subType?.max_bet ?? 1000}
         title={subType?.title ?? ""}
         numbers={numbers}

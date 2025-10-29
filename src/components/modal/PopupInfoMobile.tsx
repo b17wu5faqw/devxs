@@ -20,7 +20,7 @@ const PopupInfoMobile: React.FC<PopupConfirmProps> = ({
   const closeModal = useModalStore((state) => state.closeModal);
   const openModal = useModalStore((state) => state.openModal);
   const handleClose = () => {
-    closeModal(MODAL.INFO_MOBILE);
+    closeModal();
   };
 
   return (

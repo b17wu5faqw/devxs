@@ -18,7 +18,7 @@ const PopupSuccessQuota: React.FC<PopupErrorProps> = ({ message }) => {
   const closeModal = useModalStore((state) => state.closeModal);
   const [countdown, setCountdown] = useState(5);
   const handleClose = () => {
-    closeModal(MODAL.SUCCESS_QUOTA);
+    closeModal();
   };
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const PopupSuccessQuota: React.FC<PopupErrorProps> = ({ message }) => {
     const timer = setInterval(() => {
       setCountdown((prev) => {
         if (prev === 1) {
-          closeModal(MODAL.SUCCESS_QUOTA);
+          closeModal();
           return 0;
         }
         return prev - 1;
@@ -96,7 +96,7 @@ const PopupSuccessQuota: React.FC<PopupErrorProps> = ({ message }) => {
         <hr />
         <Flex sx={{ gap: "20px", justifyContent: "center", padding: "10px" }}>
           <ButtonConfirm
-            onClick={() => closeModal(MODAL.SUCCESS)}
+            onClick={() => closeModal()}
             sx={{ width: "130px", fontWeight: "600" }}
           >
             Xác nhận <span className="text-[#FFC800] ml-1">({countdown})</span>

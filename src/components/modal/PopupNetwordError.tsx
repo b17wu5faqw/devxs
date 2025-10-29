@@ -12,7 +12,7 @@ function PopupNetwordError() {
   );
   const closeModal = useModalStore((state) => state.closeModal);
   const handleClose = () => {
-    closeModal(MODAL.NETWORK_ERROR);
+    closeModal();
   };
 
   return (

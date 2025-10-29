@@ -24,13 +24,13 @@ function PopupGameLo() {
   const isOpen = useModalStore((state) => state.isModalOpen(MODAL.GAME_LO));
   const closeModal = useModalStore((state) => state.closeModal);
   const handleClose = () => {
-    closeModal(MODAL.GAME_LO);
+    closeModal();
   };
 
   const router = useRouter();
 
   const handleNavigate = (id: number, region_id: number) => {
-    closeModal(MODAL.GAME_LO);
+    closeModal();
     setScheduleId(id);
     setRegionId(region_id);
     setTypeId(2);

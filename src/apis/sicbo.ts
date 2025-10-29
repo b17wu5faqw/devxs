@@ -1,6 +1,6 @@
 import axiosInstance, { endpoints } from "@/utils/axios";
-import { get, postForm } from "./request";
 import { getUrl } from "./auth";
+import { get, post } from "./request";
 
 
 export const getCurrentDraw = async (params?: { jwt_key: string }) => {
@@ -48,17 +48,17 @@ export const sellBet = async (params: {
   jwt_key: string;
   betPoint: string;
 }) => {
-  const resp = await axiosInstance.post("sicbo/sell", null, { 
-    params: {
-      codes: params.codes,
-      amount: params.amount,
-      drawId: params.drawId,
-      betTypeId: params.betTypeId,
-      jwt_key: params.jwt_key,
-      betPoint: params.betPoint
-    },
+  const formData = new FormData();
+  formData.append('codes', params.codes);
+  formData.append('amount', params.amount);
+  formData.append('drawId', params.drawId);
+  formData.append('betTypeId', params.betTypeId);
+  formData.append('jwt_key', params.jwt_key);
+  formData.append('betPoint', params.betPoint);
+
+  const resp = await axiosInstance.post("sicbo/sell", formData, {
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Type': 'multipart/form-data',
     }
   });
   return resp.data;
@@ -73,7 +73,19 @@ export const sellBetV2 = async (params: {
   betPoint: string;
 }): Promise<any> => {
   const url = getUrl("sicbo/sell");
-  const resp = await postForm(url, params);
+  const resp = await post(url, params);
+  return resp.data;
+};
+
+export const getStatisticGeneral = async (params?: { jwt_key: string }) => {
+  const resp = await axiosInstance.get("sicbo/statistic-general", { params });
+  return resp.data;
+};
+
+export const getStatisticGeneralV2 = async (params?: { jwt_key: string }): Promise<any> => {
+  const url = getUrl("sicbo/statistic-general");
+  const queryParams = params?.jwt_key ? `?jwt_key=${params.jwt_key}` : "";
+  const resp = await get(`${url}${queryParams}`);
   return resp.data;
 };
 
@@ -96,6 +108,30 @@ export const getStatisticLast30Result = async (params?: { jwt_key: string }) => 
 
 export const getStatisticLast30ResultV2 = async (params?: { jwt_key: string }): Promise<any> => {
   const url = getUrl("sicbo/statistic-result");
+  const queryParams = params?.jwt_key ? `?jwt_key=${params.jwt_key}` : "";
+  const resp = await get(`${url}${queryParams}`);
+  return resp.data;
+};
+
+export const getStatisticDoubleBet = async (params?: { jwt_key: string }) => {
+  const resp = await axiosInstance.get("sicbo/statistic-double-bet", { params });
+  return resp.data;
+};
+
+export const getStatisticDoubleBetV2 = async (params?: { jwt_key: string }): Promise<any> => {
+  const url = getUrl("sicbo/statistic-double-bet");
+  const queryParams = params?.jwt_key ? `?jwt_key=${params.jwt_key}` : "";
+  const resp = await get(`${url}${queryParams}`);
+  return resp.data;
+};
+
+export const getLastDraw = async (params?: { jwt_key: string }) => {
+  const resp = await axiosInstance.get(endpoints.sicbo?.lastDraw || "sicbo/last-draw", { params });
+  return resp.data;
+};
+
+export const getLastDrawV2 = async (params?: { jwt_key: string }): Promise<any> => {
+  const url = getUrl("sicbo/last-draw");
   const queryParams = params?.jwt_key ? `?jwt_key=${params.jwt_key}` : "";
   const resp = await get(`${url}${queryParams}`);
   return resp.data;

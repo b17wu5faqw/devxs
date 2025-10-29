@@ -342,7 +342,7 @@ function Main() {
       setNumbers([]);
       setBetChip(0);
       setInput("");
-      closeModal(MODAL.CONFIRM);
+      closeModal();
 
       // Handle response
       if (res.status === 1) {
@@ -419,7 +419,7 @@ function Main() {
   );
 
   const handleClose = async () => {
-    closeModal(MODAL.INFO_MOBILE);
+    closeModal();
   };
 
   return (

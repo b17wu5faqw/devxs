@@ -18,6 +18,7 @@ interface PopupConfirmProps {
   drawNo: string;
   subtypeId: number;
   title: string;
+  inputType: number;
   numbers: string[];
   betChip: number;
   totalChip: number;
@@ -26,6 +27,8 @@ interface PopupConfirmProps {
   totalPrize: number;
   maxBet: number;
   disabled?: boolean;
+  externalOpen?: boolean;
+  externalOnClose?: () => void;
   onConfirm: (totalChip: number, betChip: number) => void;
 }
 
@@ -34,6 +37,7 @@ const PopupConfirmMobile: React.FC<PopupConfirmProps> = ({
   drawId,
   drawNo,
   subtypeId,
+  inputType,
   title,
   numbers,
   betChip: initialBetChip,
@@ -43,6 +47,8 @@ const PopupConfirmMobile: React.FC<PopupConfirmProps> = ({
   maxBet,
   totalPrize: initialTotalPrice,
   disabled,
+  externalOpen,
+  externalOnClose,
   onConfirm,
 }) => {
   const [betChip, setBetChip] = useState(initialBetChip || 0);
@@ -52,9 +58,14 @@ const PopupConfirmMobile: React.FC<PopupConfirmProps> = ({
   const { accessToken } = useAuthStore();
   const closeModal = useModalStore((state) => state.closeModal);
   const openModal = useModalStore((state) => state.openModal);
+  
   const handleClose = () => {
-    closeModal(MODAL.CONFIRM);
-  };
+        if (externalOnClose) {
+            externalOnClose();
+        } else {
+            closeModal();
+        }
+    };
 
   const handleClickChip = (num: number) => {
     setBetChip((prev) => {

@@ -35,7 +35,7 @@ const PopupLoXienConfirm: React.FC<PopupConfirmProps> = ({
   );
   const closeModal = useModalStore((state) => state.closeModal);
   const handleClose = () => {
-    closeModal(MODAL.LO_XIEN_CONFIRM);
+    closeModal();
   };
 
   const handleConfirm = async () => {
@@ -289,7 +289,7 @@ const PopupLoXienConfirm: React.FC<PopupConfirmProps> = ({
         <Flex sx={{ gap: "20px", justifyContent: "center", padding: "10px" }}>
           <ButtonCancel
             sx={{ flex: 1, fontWeight: "bold" }}
-            onClick={() => closeModal(MODAL.LO_XIEN_CONFIRM)}
+            onClick={() => closeModal()}
           >
             Hủy
           </ButtonCancel>

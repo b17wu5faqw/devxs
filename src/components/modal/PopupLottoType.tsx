@@ -38,13 +38,13 @@ function PopupLottoType({ tabActive, selectedButton, onChangeType }: TabProps) {
   const isOpen = useModalStore((state) => state.isModalOpen(MODAL.LOTTO_TYPE));
   const closeModal = useModalStore((state) => state.closeModal);
   const handleClose = () => {
-    closeModal(MODAL.LOTTO_TYPE);
+    closeModal();
   };
 
   const router = useRouter();
 
   const handleNavigate = (id: number) => {
-    closeModal(MODAL.LOTTO_TYPE);
+    closeModal();
     router.push(`/game/VnLotto/${id}`);
   };
 
@@ -61,7 +61,7 @@ function PopupLottoType({ tabActive, selectedButton, onChangeType }: TabProps) {
 
   const handleButtonClick = (button: Button) => {
     onChangeType(button);
-    closeModal(MODAL.LOTTO_TYPE);
+    closeModal();
   };
 
   return (

@@ -14,7 +14,7 @@ const PopupError: React.FC<PopupErrorProps> = ({ message }) => {
   const isOpen = useModalStore((state) => state.isModalOpen(MODAL.ERROR));
   const closeModal = useModalStore((state) => state.closeModal);
   const handleClose = () => {
-    closeModal(MODAL.ERROR);
+    closeModal();
   };
 
   return (
@@ -62,7 +62,7 @@ const PopupError: React.FC<PopupErrorProps> = ({ message }) => {
         <hr />
         <Flex sx={{ gap: "20px", justifyContent: "center", padding: "10px" }}>
           <ButtonConfirm
-            onClick={() => closeModal(MODAL.ERROR)}
+            onClick={() => closeModal()}
             sx={{ width: "130px", fontWeight: "600" }}
           >
             Đóng

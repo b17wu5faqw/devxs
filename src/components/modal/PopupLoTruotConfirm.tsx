@@ -34,7 +34,7 @@ const PopupLoTruotConfirm: React.FC<PopupConfirmProps> = ({
   );
   const closeModal = useModalStore((state) => state.closeModal);
   const handleClose = () => {
-    closeModal(MODAL.LO_TRUOT_CONFIRM);
+    closeModal();
   };
 
   const handleConfirm = async () => {

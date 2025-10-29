@@ -20,7 +20,7 @@ const PopupMakeTransfer = () => {
   const openModal = useModalStore((state) => state.openModal);
   const closeModal = useModalStore((state) => state.closeModal);
   const handleClose = () => {
-    closeModal(MODAL.MAKE_TRANSFER);
+    closeModal();
     setAmount("");
     setError("");
   };

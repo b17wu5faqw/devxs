@@ -39,7 +39,7 @@ const PopupConfirm: React.FC<PopupConfirmProps> = ({
   const isOpen = useModalStore((state) => state.isModalOpen(MODAL.CONFIRM));
   const closeModal = useModalStore((state) => state.closeModal);
   const handleClose = () => {
-    closeModal(MODAL.CONFIRM);
+    closeModal();
   };
 
   return (
@@ -181,7 +181,7 @@ const PopupConfirm: React.FC<PopupConfirmProps> = ({
         <Flex sx={{ gap: "20px", justifyContent: "center", padding: "10px" }}>
           <ButtonCancel
             sx={{ flex: 1 }}
-            onClick={() => closeModal(MODAL.CONFIRM)}
+            onClick={() => closeModal()}
           >
             Hủy
           </ButtonCancel>

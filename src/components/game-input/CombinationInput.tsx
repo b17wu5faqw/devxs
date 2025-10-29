@@ -26,7 +26,7 @@ export const CombinationInput = ({
   const [selectedNumbers, setSelectedNumbers] = useState<string[]>([]);
   const [completedSets, setCompletedSets] = useState<string[]>([]);
   const [activeSetIndex, setActiveSetIndex] = useState<number>(-1);  
-  const { scheduleId } = useMenuStore();
+  const { scheduleId, regionId } = useMenuStore();
 
   useEffect(() => {
     if (resetState) {
@@ -40,7 +40,7 @@ export const CombinationInput = ({
     setSelectedTab(newValue);
     setSelectedNumbers([]);
     setCompletedSets([]);
-    const betTypeMap = scheduleId === 1 ? {
+    const betTypeMap = regionId === 1 ? {
       0: 111,
       1: 112,
       2: 113

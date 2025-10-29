@@ -1,0 +1,3851 @@
+<div class="road_list">
+        <div id="divRoadTitle" class="rdList_Top05" style="display: block;">
+            <div id="d_result" data-item="result" class="on">Win</div>
+            <div id="d_banker" data-item="banker" class="">Nhà Cái</div>
+            <div id="d_player" data-item="player" class="">Nhà Con</div>
+            <!--<div id='d_LongD' data-item="LongD">T.Long</div>-->
+        </div>
+        <div style="position: relative; overflow-y: hidden;">
+            <div id="Ld_result" class="rdList_Bot" style="display: block;">
+                <div class="table_title mora">
+                    <div class="DT_style">
+                        <div class="table_title_sub">
+                            <span class="red_t">
+                                Cái
+                                <span id="spnBanker" class="btn_num" style="display:initial">58</span>
+                            </span>
+                            <span class="blue_t">
+                                Con
+                                <span id="spnPlayer" class="btn_num" style="display:initial">68</span>
+                            </span>
+                            <span class="green_t">
+                                Hòa
+                                <span id="spnTie" class="btn_num" style="display:initial">74</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tableWraps">
+                    <table id="tb_result" cellpadding="0" cellspacing="0" class="rdList_BetLadder Mora"><tbody><tr><td><span class="bg_blue"></span></td><td><span class="bg_green"></span></td><td><span class="bg_red"></span></td><td><span class="bg_blue"></span></td><td><span class="bg_red"></span></td><td><span class="bg_green"></span></td><td><span class="bg_blue"></span></td><td><span class="bg_green"></span></td><td><span class="bg_blue"></span></td><td><span class="bg_red"></span></td><td><span class="bg_blue"></span></td><td><span class="bg_green"></span></td><td><span class="bg_blue"></span></td><td><span class="bg_green"></span></td><td><span class="bg_blue"></span></td><td><span class="bg_green"></span></td><td><span class="bg_blue"></span></td></tr><tr><td></td><td><span class="bg_green"></span></td><td></td><td><span class="bg_blue"></span></td><td></td><td><span class="bg_green"></span></td><td></td><td><span class="bg_green"></span></td><td></td><td></td><td></td><td></td><td><span class="bg_blue"></span></td><td></td><td></td><td></td><td><span class="bg_blue"></span></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="bg_green"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+                </div>
+            </div>
+            <div id="Ld_banker" class="rdList_Bot" style="display: none;">
+                <div class="table_title mora">
+                    <div class="DT_style">
+                        <div class="table_title_sub">
+                            <span class="M_blue_t">
+                                Kéo
+                                <span id="spnScissors" class="btn_num" style="display:initial">78</span>
+                            </span>
+                            <span class="M_red_t">
+                                Búa
+                                <span id="spnStone" class="btn_num" style="display:initial">64</span>
+                            </span>
+                            <span class="M_yellow_t">
+                                Bao
+                                <span id="spnPaper" class="btn_num" style="display:initial">58</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tableWraps">
+                    <table id="tb_banker" cellpadding="0" cellspacing="0" class="rdList_BetLadder Mora"><tbody><tr><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td></tr><tr><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td></td><td></td><td></td><td></td><td></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td></td></tr><tr><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td></td><td></td><td></td><td></td><td></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+                </div>
+            </div>
+            <div id="Ld_player" class="rdList_Bot" style="display: none;">
+                <div class="table_title mora">
+                    <div class="DT_style">
+                        <div class="table_title_sub">
+                            <span class="M_blue_t">
+                                Kéo
+                                <span id="spnScissors" class="btn_num" style="display:initial">70</span>
+                            </span>
+                            <span class="M_red_t">
+                                Búa
+                                <span id="spnStone" class="btn_num" style="display:initial">62</span>
+                            </span>
+                            <span class="M_yellow_t">
+                                Bao
+                                <span id="spnPaper" class="btn_num" style="display:initial">68</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tableWraps">
+                    <table id="tb_player" cellpadding="0" cellspacing="0" class="rdList_BetLadder Mora"><tbody><tr><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td></tr><tr><td></td><td></td><td></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_stone.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_scissors.svg"></td><td><img src="/images/graph/rpsElec/PC/icon_paper.svg"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+                </div>
+            </div>
+            <div id="Ld_LongD" class="rdList_Bot03 RPSElec_m" style="display: none;">
+                <table id="tb_LongD" class="rdList_table02" cellpadding="0" cellspacing="0"><div class="divlongBetUpdate">Trường Long đang cập nhật...</div></table>
+            </div>
+        </div>
+    </div>
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "微軟正黑體";
+    background-color: #111;
+    background-size: 100% auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.road_list {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+.road_list02 {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+}
+
+.rdList_Top, .rdList_Top02, .rdList_Top03, .rdList_Top04, .rdList_Top05, .rdList_Top06, .rdList_Top07 {
+    background-color: #ebebeb;
+    padding: 1.5% 0;
+    border-bottom: 1px solid #c4c4c4;
+    box-sizing: border-box;
+}
+
+    .rdList_Top::after, .rdList_Top02::after, .rdList_Top03::after, .rdList_Top04::after, .rdList_Top05::after, .rdList_Top06::after, .rdList_Top07::after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    .rdList_Top div, .rdList_Top select, .rdList_Top02 div, .rdList_Top02 select, .rdList_Top03 div, .rdList_Top04 div, .rdList_Top05 div {
+        display: block;
+        float: left;
+        width: 47%;
+        height: 24px;
+        line-height: 24px;
+        margin-left: 2%;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #d2d2d2;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 0.9em;
+    }
+
+        .rdList_Top div:active, .rdList_Top02 div:active, .rdList_Top03 div:active, .rdList_Top04 div:active, .rdList_Top05 div:active {
+            background-color: #d7ecff;
+            color: #4f88c1;
+            border: 1px solid #4f88c1;
+        }
+
+    .rdList_Top select, .rdList_Top02 select, .rdList_Top03 select, .rdList_Top #selLtZodiac2, .rdList_Top #selLtBall2,
+    .rdList_Top #btn_pk10HisTop_v3, .rdList_Top #pk10Rank2, .rdList_Top #betCar2, .rdList_Top #selLtTail2,
+    .rdList_Top #betCar03, .rdList_Top .betCar03, .rdList_Top02 .betCar, .rdList_Top03 .betCar,
+    .road_list #selH10Elec_1722, .rdList_Top #selH10Elec_1712, .rdList_Top #selH10Elec_top_1722, .rdList_Top .betCar02 {
+        background: url(/images/graph/common/icon_arrow_road.svg) no-repeat top;
+        background-color: #fff;
+        background-size: auto 35%;
+        background-position: 96% 50%;
+        -webkit-appearance: none;
+    }
+
+    .rdList_Top02 select {
+        width: 50%;
+        margin-left: 25%;
+        padding: 2% 0 2% 12%;
+    }
+
+    .rdList_Top02 div {
+        width: 22.5%;
+        margin-left: 2%;
+    }
+
+    .rdList_Top03 div {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .rdList_Top04 div {
+        width: 18%;
+        margin-left: 1.7%;
+    }
+
+    .rdList_Top05 div {
+        width: 30%;
+        margin-left: 2.5%;
+    }
+
+    .rdList_Top06 div {
+        float: left;
+        width: 20%;
+        text-align: center;
+        box-sizing: border-box;
+        border-right: 1px solid #c4c4c4;
+        font-size: 0.7em;
+        line-height: 0.7em;
+        margin: 1% 0;
+        color: #dbb900;
+    }
+
+        .rdList_Top06 div span {
+            display: block;
+            width: 50%;
+            float: left;
+        }
+
+        .rdList_Top06 div:nth-child(2) {
+            color: #a46424;
+        }
+
+        .rdList_Top06 div:nth-child(3) {
+            color: #0100fc;
+        }
+
+        .rdList_Top06 div:nth-child(4) {
+            color: #fe0000;
+        }
+
+        .rdList_Top06 div:last-child {
+            color: #e88a02;
+            border-right: 0;
+        }
+
+    .rdList_Top06.LtColor div {
+        width: 33.3333%;
+        color: #ed1c24;
+    }
+
+        .rdList_Top06.LtColor div:nth-child(2) {
+            color: #3f48cc;
+        }
+
+        .rdList_Top06.LtColor div:nth-child(3) {
+            color: #22b14c;
+        }
+
+    .rdList_Top .on, .rdList_Top02 .on, .rdList_Top03 .on, .rdList_Top04 .on, .rdList_Top05 .on {
+        background-color: #d7ecff;
+        color: #4f88c1;
+        border: 1px solid #4f88c1;
+    }
+
+.rdList_Bot {
+    overflow: hidden;
+    overflow-x: auto;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.rdList_Bot02 {
+    height: 111px;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.rdList_Bot03 {
+    height: 110px;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.rdListWraps {
+    position: relative;
+}
+
+.rdList_table {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    border-spacing: 0px;
+    border-collapse: separate;
+    background-color: #fff;
+    table-layout: fixed;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+    .rdList_table tr td {
+        display: table-cell;
+        position: relative;
+        border-bottom: 1px solid #c4c4c4;
+        border-right: 1px solid #c4c4c4;
+        background-color: #fff;
+        height: 14px;
+        line-height: 14px;
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    .rdList_table.keno tr td {
+        width: 14px;
+    }
+
+    /*生肖*/
+    .rdList_table.LtZodiac td {
+        color: #4174b1;
+    }
+
+    /*生肖*/
+    .rdList_table.LtZodiac02 td {
+        height: 15px;
+        line-height: 15px;
+    }
+
+    .rdList_table.LtZodiac02 tr:nth-child(odd) td {
+        background-color: #f2f2f2;
+    }
+
+    .rdList_table.LtZodiac02 tr:nth-child(even) td {
+        color: #fe0d0e;
+    }
+
+    /*尾數*/
+    .rdList_table.LtZodiac03 td {
+        height: 22px;
+        line-height: 22px;
+    }
+
+    .rdList_table.LtZodiac03 tr:nth-child(odd) td {
+        background-color: #f2f2f2;
+    }
+
+    .rdList_table.LtZodiac03 tr:nth-child(even) td {
+        color: #fe0d0e;
+    }
+
+.LtBall_red {
+    background-color: #ff0000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+}
+
+@media (min-width:350px) {
+    .rdList_table.LtZodiac02 td {
+        height: 15px;
+        line-height: 15px;
+    }
+
+    .rdList_table.LtZodiac03 td {
+        height: 24px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width:375px) {
+    .rdList_table.LtZodiac02 td {
+        height: 19px;
+        line-height: 19px;
+    }
+
+    .rdList_table.LtZodiac03 td {
+        height: 29px;
+        line-height: 29px;
+    }
+}
+
+@media (min-width:400px) {
+    .rdList_table.LtZodiac02 td {
+        height: 18.5px;
+        line-height: 18.5px;
+    }
+
+    .rdList_table.LtZodiac03 td {
+        height: 28.5px;
+        line-height: 28.5px;
+    }
+}
+
+@media (min-width:530px) {
+    .rdList_table.LtZodiac02 td {
+        height: 23.5px;
+        line-height: 23.5px;
+    }
+
+    .rdList_table.LtZodiac03 td {
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .LtBall_red {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin: 5px auto;
+    }
+}
+
+@media (min-width:600px) {
+    .rdList_table.LtZodiac02 td {
+        height: 26px;
+        line-height: 26px;
+    }
+
+    .rdList_table.LtZodiac03 td {
+        height: 38px;
+        line-height: 38px;
+    }
+}
+
+@media (min-width:768px) {
+    .rdList_table.LtZodiac02 td {
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .rdList_table.LtZodiac03 td {
+        height: 53px;
+        line-height: 53px;
+    }
+
+    .LtBall_red {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        margin: 8px auto;
+    }
+}
+
+/*防止Keno/賽車 VN長龍換行造成跑版*/
+.longD .vn {
+    transform: scale(0.91);
+    display: inline-block;
+}
+
+.blue_t {
+    color: #0000ff;
+}
+
+.red_t {
+    color: #ff0000;
+}
+
+.green_t {
+    color: #41b401;
+}
+
+.rdList_Top07 div {
+    float: left;
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    color: #fe0000;
+    font-size: 0.7em;
+    line-height: 0.9em;
+}
+
+    .rdList_Top07 div span {
+        display: block;
+        width: 50%;
+        float: left;
+    }
+
+    .rdList_Top07 div:nth-child(2), .rdList_Top07 div:nth-child(4) {
+        color: #0201fd;
+    }
+
+.tableWraps {
+    margin-left: 20.2%;
+    overflow: hidden;
+    overflow-x: auto;
+    background-color: #f0f0f0;
+}
+
+.rdList_table03, .rdList_table04 {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    border-spacing: 0px;
+    border-collapse: separate;
+    background-color: #fff;
+    table-layout: fixed;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.rdList_table03 {
+    height: 51px;
+}
+
+.rdList_table04 {
+    height: 49px;
+}
+
+    .rdList_table03 tr td, .rdList_table04 tr td {
+        position: relative;
+        border-bottom: 1px solid #c4c4c4;
+        border-right: 1px solid #c4c4c4;
+        background-color: #fff;
+        width: 7px;
+        height: 7px;
+        line-height: 7px;
+        text-align: center;
+        font-size: 0.5em;
+    }
+
+.rdList_table03 tr:last-child td {
+    border-bottom: 2px solid #aaaaaa;
+}
+
+
+.table_title {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 20%;
+    height: 100px;
+    background-color: #f1eff2;
+    border-right: 1px solid #aaaaaa;
+}
+
+    .table_title > div:first-child {
+        border-bottom: 2px solid #aaaaaa;
+        box-sizing: border-box;
+        height: 50px;
+        display: table;
+        width: 100%;
+    }
+
+    .table_title > div:last-child {
+        box-sizing: border-box;
+        height: 50px;
+        display: table;
+        width: 100%;
+    }
+
+.table_title_sub {
+    display: table-cell !important;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 18%;
+    border: 0 !important;
+}
+
+.table_title div > span {
+    display: block;
+    font-size: 0.75em;
+    line-height: 1.7em;
+}
+
+.table_title .DT_style div span {
+    line-height: 2.8em;
+}
+
+#Ld_ladderend .table_title .DT_style div span {
+    line-height: 1.4em;
+}
+
+.table_title div .hd_auto span {
+    line-height: normal;
+}
+
+.table_title .wd_auto {
+    padding-left: 0;
+    text-align: center;
+}
+
+.table_title > .DT_style:first-child, .table_title > .DT_style:last-child {
+    border: 0;
+}
+
+.table_title:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: 360px) {
+    .rdList_Top div, .rdList_Top select, .rdList_Top02 div, .rdList_Top02 select, .rdList_Top03 div, .rdList_Top04 div, .rdList_Top05 div {
+        height: 26px;
+        line-height: 26px;
+    }
+
+    .rdList_Top06 div {
+        font-size: 0.8em;
+    }
+
+    .rdList_Top select, .rdList_Top02 select {
+        background-size: auto 40%;
+        background-position: 94% 50%;
+    }
+
+    .rdList_Top02 select {
+        padding-left: 14%;
+    }
+
+    .rdList_table {
+        height: 110px;
+    }
+
+        .rdList_table tr td {
+            height: 15px;
+            width: 15px;
+            line-height: 16px;
+        }
+
+        .rdList_table.keno tr td {
+            width: 16px;
+        }
+
+    .rdList_table03 {
+        height: 67px;
+    }
+
+    .rdList_table04 {
+        height: 66px;
+    }
+
+        .rdList_table03 tr td, .rdList_table04 tr td {
+            width: 8px;
+            height: 10px;
+            line-height: 10px;
+            font-size: 0.5em;
+        }
+
+    .table_title {
+        height: 133px !important;
+    }
+
+        .table_title > div:first-child {
+            height: 67px;
+        }
+
+        .table_title > div:last-child {
+            height: 66px;
+        }
+
+        .table_title div > span {
+            font-size: 0.75em;
+        }
+
+    #divTilte_DT.table_title {
+        height: 120px !important;
+    }
+
+    #divTilte_ST.table_title {
+        height: 120px !important;
+    }
+
+    .table_title_sub {
+        padding-left: 22%;
+    }
+
+        .table_title_sub.id {
+            padding-left: 12%;
+        }
+
+    .table_title .DT_style div span {
+        line-height: 3em;
+    }
+
+    #Ld_ladderend .table_title .DT_style div span {
+        line-height: 1.7em;
+    }
+
+    .DT_style.DT_margin_top{
+        margin-top:12px;
+    }
+}
+
+@media (min-width: 375px) {
+    .rdList_Top div, .rdList_Top select, .rdList_Top02 div, .rdList_Top02 select {
+        font-size: 0.95em;
+    }
+
+    .rdList_table tr td {
+        height: 19px;
+        width: 16px;
+        line-height: 19px;
+        font-size: 0.9em;
+    }
+
+    .rdList_table.keno tr td {
+        width: 17px;
+    }
+
+    .DT_style.DT_margin_top {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 400px) {
+    .rdList_Top div, .rdList_Top select, .rdList_Top02 div, .rdList_Top02 select, .rdList_Top03 div, .rdList_Top04 div, .rdList_Top05 div {
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .rdList_Top06 div {
+        font-size: 0.9em;
+        line-height: 1em;
+    }
+
+    .rdList_Top select {
+        padding-left: 17%;
+    }
+
+    .rdList_table tr td {
+        height: 18px;
+        width: 18px;
+        line-height: 19px;
+        font-size: 0.9em;
+    }
+
+    .rdList_table.keno tr td {
+        width: 19px;
+    }
+
+    .rdList_table03 {
+        height: 73px;
+    }
+
+    .rdList_table04 {
+        height: 72px;
+    }
+
+        .rdList_table03 tr td, .rdList_table04 tr td {
+            width: 9px;
+            height: 11px;
+            line-height: 5px;
+            font-size: 0.6em;
+        }
+
+    .table_title {
+        width: 20%;
+        height: 145px !important;
+    }
+
+    #divTilte_DT.table_title {
+        height: 120px !important;
+    }
+
+    #divTilte_ST.table_title {
+        height: 120px !important;
+    }
+
+    .table_title > div:first-child {
+        height: 73px;
+    }
+
+    .table_title > div:last-child {
+        height: 72px;
+    }
+
+    .rdList_Top07 div {
+        font-size: 0.8em;
+        line-height: 1em;
+    }
+
+    .table_title div > span {
+        font-size: 0.8em;
+    }
+
+        .table_title div > span.small {
+            font-size: 0.8em;
+        }
+
+    .table_title .DT_style div span {
+        line-height: 2.7em;
+    }
+
+    .DT_style.DT_margin_top {
+        margin-top: 3px;
+    }
+}
+
+@media (min-width: 414px) {
+    .rdList_Top07 div {
+        font-size: 0.9em;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 530px) {
+    .rdList_Top06 div {
+        margin: 0.5% 0;
+    }
+
+    .rdList_Top select {
+        padding-left: 18%;
+    }
+
+    .rdList_Top02 select {
+        padding-left: 17%;
+    }
+
+    .rdList_table tr td {
+        height: 23px;
+        width: 23px;
+        line-height: 24px;
+        font-size: 1.1em;
+    }
+
+    .rdList_table.keno tr td {
+        width: 24px;
+    }
+
+    .rdList_table03 {
+        height: 76px;
+    }
+
+    .rdList_table04 {
+        height: 74px;
+    }
+
+        .rdList_table03 tr td, .rdList_table04 tr td {
+            width: 11px;
+            height: 11px;
+            line-height: 11px;
+            font-size: 0.7em;
+        }
+
+    .table_title {
+        width: 20%;
+        height: 150px !important;
+    }
+
+    #divTilte_DT.table_title {
+        width: 20%;
+        height: 150px !important;
+    }
+
+    #divTilte_ST.table_title {
+        width: 20%;
+        height: 150px !important;
+    }
+
+    .table_title div > span {
+        font-size: 1em;
+    }
+
+    .table_title > div:first-child {
+        height: 76px;
+    }
+
+    .table_title > div:last-child {
+        height: 74px;
+    }
+
+    .table_title_sub {
+        padding-left: 24%;
+    }
+
+        .table_title_sub.id {
+            padding-left: 14%;
+        }
+
+    .table_title .DT_style div span {
+        line-height: 3.1em;
+    }
+
+    .table_title div > span.small {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 600px) {
+    .rdList_table tr td {
+        height: 26px;
+        width: 26px;
+        line-height: 27px;
+        font-size: 1.2em;
+    }
+
+    .rdList_table.keno tr td {
+        width: 27px;
+    }
+
+    .rdList_table03 {
+        height: 85px;
+    }
+
+    .rdList_table04 {
+        height: 83px;
+    }
+
+        .rdList_table03 tr td, .rdList_table04 tr td {
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+            font-size: 0.8em;
+        }
+
+    .table_title {
+        width: 20%;
+        height: 168px !important;
+    }
+
+        .table_title div > span {
+            font-size: 1.1em;
+        }
+
+        .table_title > div:first-child {
+            height: 85px;
+        }
+
+        .table_title > div:last-child {
+            height: 83px;
+        }
+
+    #divTilte_DT.table_title {
+        height: 167px !important;
+    }
+}
+
+@media (min-width: 744px) {
+    #divTilte_DT.table_title, #divTilte_ST.table_title {
+        width: 20%;
+        height: 173px !important;
+    }
+
+    .table_title div > span {
+        font-size: 1.3em;
+    }
+
+    .rdList_table03.goal tr td, .rdList_table04.goal tr td {
+        height: 16px;
+        line-height: 16px;
+    }
+
+    #divTilte_DT.table_title .DT_style div span {
+        line-height: 2.7em;
+    }
+
+    .table_title div > span.small {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .rdList_Top, .rdList_Top02, .rdList_Top03, .rdList_Top04, .rdList_Top05 {
+        padding: 1% 0;
+    }
+
+        .rdList_Top div, .rdList_Top select, .rdList_Top02 div, .rdList_Top02 select, .rdList_Top03 div, .rdList_Top04 div, .rdList_Top05 div {
+            height: 38px;
+            line-height: 38px;
+            font-size: 1.3em;
+        }
+
+    .rdList_Top06 div {
+        font-size: 1.3em;
+        line-height: 1.3em;
+        margin: 0.3% 0;
+    }
+
+    .rdList_Top select {
+        padding-left: 18%;
+    }
+
+    .rdList_Top02 select {
+        padding-left: 19%;
+    }
+
+    .rdList_Bot02 {
+        height: 165px;
+    }
+
+    .rdList_Bot03 {
+        height: 165px;
+    }
+
+    .rdList_table tr td {
+        height: 35px;
+        width: 35px;
+        line-height: 36px;
+        font-size: 1.4em;
+    }
+
+    .rdList_table.keno tr td {
+        width: 36px;
+    }
+
+    .rdList_table03 {
+        height: 121px;
+    }
+
+    .rdList_table04 {
+        height: 120px;
+    }
+
+        .rdList_table03 tr td, .rdList_table04 tr td {
+            width: 16px;
+            height: 19px;
+            line-height: 19px;
+            font-size: 1em;
+        }
+
+    .table_title {
+        width: 20%;
+        height: 241px !important;
+    }
+
+    #divTilte_DT.table_title {
+        width: 20%;
+        height: 225px !important;
+    }
+
+        #divTilte_DT.table_title .DT_style div span {
+            line-height: 3.1em;
+        }
+
+    #divTilte_ST.table_title {
+        width: 20%;
+        height: 225px !important;
+    }
+
+    .table_title div > span {
+        font-size: 1.5em;
+    }
+
+    .table_title > div:first-child {
+        height: 121px;
+    }
+
+    .table_title > div:last-child {
+        height: 120px;
+    }
+
+    .rdList_Top07 div {
+        font-size: 1.3em;
+        line-height: 1.3em;
+    }
+
+    #Ld_ladderend .table_title .DT_style div span {
+        line-height: 2em;
+    }
+
+    .table_title div > span.small {
+        font-size: 1.3em;
+    }
+}
+
+
+
+/*前三 - 七彩*/
+.Ball_red, .Ball_orange, .Ball_yellow, .Ball_green, .Ball_Blue, .Ball_Indigo, .Ball_purple, .Ball_black {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #1b85ff;
+    border-radius: 50px;
+    margin: 1px auto;
+}
+
+.Ball_Indigo.t_lightblue{
+    background-color: #007eff;
+}
+
+#divPC28 .Ball_red, #divPC28 .Ball_orange, #divPC28 .Ball_yellow, #divPC28 .Ball_green, #divPC28 .Ball_Blue, #divPC28 .Ball_Indigo, #divPC28 .Ball_purple {
+    margin: 1px auto;
+}
+
+.Ball_red {
+    background-color: #ff1f1e;
+}
+
+.Ball_black {
+    background-color: #111;
+}
+
+.Ball_orange {
+    background-color: #ff8a00;
+}
+
+.Ball_yellow {
+    background-color: #ffd200;
+}
+
+.Ball_green {
+    background-color: #14bb15;
+}
+
+.Ball_Blue {
+    background-color: #1b85ff;
+}
+
+.Ball_Indigo {
+    background-color: #341ddc;
+}
+
+.Ball_purple {
+    background-color: #aa43ea;
+}
+
+@media (min-width: 360px) {
+    .Ball_red, .Ball_orange, .Ball_yellow, .Ball_green, .Ball_Blue, .Ball_Indigo, .Ball_purple, .Ball_black {
+        width: 13px;
+        height: 13px;
+    }
+}
+
+@media (min-width: 375px) {
+    .Ball_red, .Ball_orange, .Ball_yellow, .Ball_green, .Ball_Blue, .Ball_Indigo, .Ball_purple, .Ball_black {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (min-width: 400px) {
+    .Ball_red, .Ball_orange, .Ball_yellow, .Ball_green, .Ball_Blue, .Ball_Indigo, .Ball_purple, .Ball_black {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (min-width: 530px) {
+    .Ball_red, .Ball_orange, .Ball_yellow, .Ball_green, .Ball_Blue, .Ball_Indigo, .Ball_purple, .Ball_black {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (min-width: 600px) {
+    .Ball_red, .Ball_orange, .Ball_yellow, .Ball_green, .Ball_Blue, .Ball_Indigo, .Ball_purple, .Ball_black {
+        width: 23px;
+        height: 23px;
+        margin: 2px;
+    }
+}
+
+@media (min-width: 744px) {
+    .Ball_red, .Ball_orange, .Ball_yellow, .Ball_green, .Ball_Blue, .Ball_Indigo, .Ball_purple, .Ball_black {
+        width: 28px;
+        height: 28px;
+        margin: 4px auto;
+    }
+}
+
+@media (min-width: 360px) {
+    .GoalElec.Ball_red, .GoalElec.Ball_black {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+@media (min-width: 375px) {
+    .GoalElec.Ball_red, .GoalElec.Ball_black {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (min-width: 530px) {
+    .GoalElec.Ball_red, .GoalElec.Ball_black {
+        width: 9px;
+        height: 9px;
+    }
+}
+
+@media (min-width: 768px) {
+    .GoalElec.Ball_red, .GoalElec.Ball_black {
+        width: 11px;
+        height: 11px;
+        margin: 4px auto;
+    }
+}
+
+/*一星定位*/
+.rdList_Top02 .star1 {
+    padding: 2% 0 2% 16%;
+}
+
+.colorNum01 {
+    color: #fdad00;
+}
+
+.colorNum02 {
+    color: #0088fe;
+}
+
+.colorNum03 {
+    color: #666;
+}
+
+.colorNum04 {
+    color: #f85f01;
+}
+
+.colorNum05 {
+    color: #70e2d8;
+}
+
+.colorNum06 {
+    color: #3a207b;
+}
+
+.colorNum07 {
+    color: #adadad;
+}
+
+.colorNum08 {
+    color: #f00;
+}
+
+.colorNum09 {
+    color: #4f0101;
+}
+
+.colorNum10 {
+    color: #0d6703;
+}
+
+@media (min-width: 360px) {
+    .rdList_Top02 .star1 {
+        padding-left: 18%;
+    }
+}
+
+@media (min-width: 530px) {
+    .rdList_Top02 .star1 {
+        padding-left: 19%;
+    }
+}
+
+@media (min-width: 768px) {
+    .rdList_Top02 .star1 {
+        padding-left: 20%;
+    }
+}
+
+/*基諾彩*/
+.rdList_table02 {
+    width: 100%;
+    margin: 0 auto;
+    border-spacing: 0px;
+    border-collapse: separate;
+    background-color: #fff;
+    table-layout: fixed;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+    .rdList_table02 tr td {
+        display: table-cell;
+        position: relative;
+        border-bottom: 1px solid #c4c4c4;
+        border-right: 1px solid #c4c4c4;
+        background-color: #fff;
+        width: 144px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    /*因應賽車 長龍 冠亞軍和值 小米8/Mate20 跑版*/
+    .rdList_table02 .float_L {
+        margin-left: 3%;
+    }
+
+    .rdList_table02 .float_R {
+        margin-right: 3%;
+    }
+
+.float_L {
+    float: left;
+    margin-left: 5%;
+}
+
+.float_R {
+    float: right;
+    margin-right: 5%;
+}
+
+.dkBlue_t {
+    color: #308cdf;
+}
+
+.orange_t {
+    color: #e88b00;
+}
+
+.yellow_t {
+    color: #ffd700;
+}
+
+.brown_t {
+    color: #964b00;
+}
+
+@media (min-width: 360px) {
+    .rdList_table02 tr td {
+        width: 161px;
+        font-size: 0.8em;
+    }
+
+        /*賽車/BET賽馬 長龍調整*/
+        .rdList_table02 tr td.longD {
+            font-size: 0.9em;
+        }
+}
+
+@media (min-width: 375px) {
+    .rdList_table02 tr td {
+        width: 168px;
+    }
+}
+
+@media (min-width: 400px) {
+    .rdList_table02 tr td {
+        width: 185px;
+    }
+}
+
+@media (min-width: 540px) {
+    .rdList_table02 tr td.RPSLongD {
+        height: 45px;
+    }
+}
+
+@media (min-width: 744px) {
+     .rdList_table02 tr td.RPSLongD {
+        height: 51px;
+    }
+}
+
+@media (min-width: 768px) {
+    .rdList_table02 tr td {
+        width: 172px;
+        height: 54px;
+        line-height: 54px;
+        font-size: 1.2em;
+    }
+
+    .rdList_table02 tr td.RPSLongD {
+        height: 69px;
+    }
+
+
+        /*賽車/BET賽馬 長龍調整*/
+        .rdList_table02 tr td.longD {
+            font-size: 1.2em;
+        }
+}
+
+@media (min-width: 1024px) {
+     .rdList_table02 tr td.RPSLongD {
+        height: 69px;
+    }
+}
+
+/*bet賽車*/
+.rdList_Top .betCar {
+    padding-left: 0!important;
+}
+
+.rdList_Top .betCar02 {
+    padding-left: 0!important;
+}
+
+.rdList_Top .betCar03 {
+    padding-left: 0!important;
+}
+
+    .rdList_Top .betCar03.vn {
+        padding-left: 0!important;
+    }
+
+.betCar_wrap {
+    margin: 1% 0 1%;
+    display: flex;
+    align-items: center;
+}
+
+    .betCar_wrap::after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+.betCar_list img {
+    width: 28px;
+    height: auto;
+}
+
+.betCar_list {
+    float: left;
+    margin-left: 8%;
+}
+
+    .betCar_list img {
+        width: 28px;
+        height: auto;
+    }
+
+    .betCar_list span {
+        display: table;
+        margin: 1% auto 0;
+        font-size: 0.9em;
+        color: #ff0000;
+    }
+
+    .betCar_list .blue_t {
+        color: #007eff;
+    }
+
+    .betCar_list.icon {
+        margin-left: 6%;
+    }
+
+        .betCar_list.icon img {
+            display: block;
+            width: 20px;
+        }
+
+.betCar_itle {
+    float: left;
+    margin: 17% 0 0 2%;
+    font-size: 0.8em;
+}
+
+
+.betCar_list02 {
+    float: left;
+    margin: 3% 0;
+    margin-left: 4.8%;
+}
+
+    .betCar_list02 img {
+        width: 28px;
+        height: auto;
+    }
+
+    .betCar_list02 span {
+        display: table;
+        margin: 15px auto 0;
+        font-size: 1.15em;
+        font-weight: bold;
+    }
+
+.colorNum01.ts {
+    color: #fdad00;
+}
+
+.colorNum02.ts {
+    color: #0088fe;
+}
+
+.colorNum03.ts {
+    color: #666;
+}
+
+.colorNum04.ts {
+    color: #FF6A32;
+}
+
+.colorNum05.ts {
+    color: #089FB0;
+}
+
+.colorNum06.ts {
+    color: #B164FF;
+}
+
+.colorNum07.ts {
+    color: #4356BF;
+}
+
+.colorNum08.ts {
+    color: #FF4C54;
+}
+
+.colorNum09.ts {
+    color: #C99B67;
+}
+
+.colorNum10.ts {
+    color: #48B363;
+}
+
+@media (min-width: 360px) {
+    .betCar_list img {
+        width: 32px;
+    }
+
+    .betCar_list.icon img {
+        width: 24px;
+    }
+
+    .betCar_itle {
+        margin: 13% 0 0 2%;
+        font-size: 0.9em;
+    }
+
+    .betCar_list02 {
+        margin-left: 5.8%;
+    }
+
+    .rdList_Top .betCar02 {
+        padding-left: 5%;
+    }
+
+    .rdList_Top .betCar021 {
+        padding-left: 2%;
+        padding-right:3%;
+    }
+}
+
+@media (min-width: 375px) {
+    .rdList_Top .betCar {
+        padding-left: 0!important;
+    }
+
+    .betCar_wrap {
+        margin: 1% 0 0;
+    }
+
+    .betCar_list {
+        margin-left: 8.7%;
+    }
+
+        .betCar_list span {
+            font-size: 1em;
+        }
+
+    .betCar_itle {
+        margin: 13% 0 0 2%;
+    }
+
+    .betCar_list02 {
+        margin-left: 5.9%;
+    }
+}
+
+@media (min-width: 400px) {
+    .betCar_wrap {
+        margin: 1.5% 0 1%;
+    }
+
+    .rdList_Top .betCar02 {
+        padding-left: 7.5%;
+    }
+    .rdList_Top .betCar021 {
+        padding-left: 2%;
+        padding-right:3%;
+    }
+
+    .rdList_Top .betCar03 {
+        padding-left: 0 !important;
+    }
+
+        .rdList_Top .betCar03.vn {
+            padding-left: 13%;
+        }
+
+    .betCar_list {
+        margin-left: 9%;
+    }
+
+        .betCar_list img {
+            width: 34px;
+        }
+
+        .betCar_list span {
+            font-size: 1.1em;
+        }
+
+        .betCar_list.icon img {
+            width: 26px;
+        }
+
+    .betCar_itle {
+        margin: 11% 0 0 2%;
+        font-size: 1.2em;
+    }
+
+    .betCar_list02 {
+        margin-left: 6.5%;
+    }
+}
+
+@media (min-width: 530px) {
+    .rdList_Top .betCar {
+        padding-left: 15%;
+    }
+
+    .rdList_Top .betCar02 {
+        padding-left: 13%;
+    }
+
+    .rdList_Top .betCar03 {
+        padding-left: 17%;
+    }
+
+    .betCar_list {
+        margin-left: 11%;
+    }
+
+    .betCar_list02 {
+        margin-left: 8%;
+    }
+}
+
+@media (min-width: 600px) {
+    .rdList_Top .betCar {
+        padding-left: 15%;
+    }
+
+    .betCar_list {
+        margin-left: 11.5%;
+    }
+
+    .betCar_list02 {
+        margin-left: 8.5%;
+    }
+}
+
+@media (min-width: 744px) {
+    .rdList_Top .betCar {
+        padding-left: 16%;
+    }
+
+    .betCar_list {
+        margin-left: 12.4%;
+    }
+
+        .betCar_list img {
+            width: 36px;
+        }
+
+        .betCar_list span {
+            font-size: 1.4em;
+        }
+
+        .betCar_list.icon img {
+            width: 28px;
+        }
+
+    .betCar_itle {
+        margin: 8.5% 0 0 2%;
+        font-size: 1.6em;
+    }
+
+    .betCar_list02 {
+        margin-left: 9.2%;
+    }
+
+        .betCar_list02 img {
+            width: 33px;
+            height: auto;
+        }
+
+        .betCar_list02 span {
+            font-size: 1.55em;
+            margin-top: 25px;
+        }
+}
+
+@media (min-width: 1024px) {
+
+    .betCar_list {
+        margin-left: 13.5%;
+    }
+
+    .betCar_list02 {
+        margin-left: 10.2%;
+    }
+
+    .rdList_Top .betCar02 {
+        padding-left: 15%;
+    }
+
+    .rdList_Top .betCar03 {
+        padding-left: 20%;
+    }
+}
+
+/*期數*/
+.num_periods {
+    display: table;
+    position: absolute;
+    background-color: #fffcb0;
+    margin: auto;
+    line-height: 23px;
+    padding: 0 1%;
+    font-size: 0.9em;
+    z-index: 99;
+    border: 1px solid #c4c4c4;
+    display: none;
+}
+
+    .num_periods span {
+        color: #000;
+    }
+
+.bg_orange {
+    background-color: #ffc938 !important;
+}
+
+@media (min-width: 360px) {
+    .num_periods {
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 375px) {
+    .num_periods {
+        line-height: 25px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 400px) {
+    .num_periods {
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .num_periods {
+        line-height: 32px;
+        font-size: 1.3em;
+    }
+}
+
+/*-------------------------BET11選5 START----------------------------*/
+.colorNum01.pickE {
+    color: #fdad00;
+}
+
+.colorNum02.pickE {
+    color: #0088fe;
+}
+
+.colorNum03.pickE {
+    color: #666;
+}
+
+.colorNum04.pickE {
+    color: #f85f01;
+}
+
+.colorNum05.pickE {
+    color: #70e2d8;
+}
+
+.colorNum06.pickE {
+    color: #3a207b;
+}
+
+.colorNum07.pickE {
+    color: #0f46d7;
+}
+
+.colorNum08.pickE {
+    color: #f00;
+}
+
+.colorNum09.pickE {
+    color: #4f0101;
+}
+
+.colorNum10.pickE {
+    color: #0d6703;
+}
+
+.colorNum11.pickE {
+    color: #ea78de;
+}
+/*-------------------------BET11選5 END----------------------------*/
+/*-------------------------BET快樂十分 START----------------------------*/
+.hp10_01 {
+    color: #328c23;
+}
+
+.hp10_02 {
+    color: #ae0045;
+}
+
+.hp10_03 {
+    color: #23308c;
+}
+
+.hp10_04 {
+    color: #712688;
+}
+
+.hp10_05 {
+    color: #00778e;
+}
+
+.hp10_06 {
+    color: #e60077;
+}
+
+.hp10_07 {
+    color: #a3bf1c;
+}
+
+.hp10_08 {
+    color: #dc9a00;
+}
+
+.hp10_09 {
+    color: #00b0dc;
+}
+
+.hp10_10 {
+    color: #0062af;
+}
+
+.hp10_11 {
+    color: #dcc500;
+}
+
+.hp10_12 {
+    color: #e65c00;
+}
+
+.hp10_13 {
+    color: #788924;
+}
+
+.hp10_14 {
+    color: #472b2b;
+}
+
+.hp10_15 {
+    color: #52545d;
+}
+
+.hp10_16 {
+    color: #ee8e4f;
+}
+
+.hp10_17 {
+    color: #8273c4;
+}
+
+.hp10_18 {
+    color: #82522c;
+}
+
+.hp10_19 {
+    color: #28bb9a;
+}
+
+.hp10_20 {
+    color: #e02244;
+}
+
+/*-------------------------BET快樂十分 END----------------------------*/
+
+/*BET水管*/
+.rdList_BetLadder {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-spacing: 0px;
+    border-collapse: separate;
+    background-color: #fff;
+    table-layout: fixed;
+}
+
+    .rdList_BetLadder td {
+        position: relative;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        width: auto;
+        height: 14px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+        .rdList_BetLadder td span {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            width: 13px;
+            height: 13px;
+            line-height: 15px;
+            box-sizing: border-box;
+            border-radius: 30px;
+            font-size: 0.7em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .rdList_BetLadder td .bg_red {
+            border: 1px solid #ff0000;
+            color: #fdb82d;
+        }
+
+        .rdList_BetLadder td .bg_blue {
+            border: 1px solid #0201ff;
+            color: #48b363;
+        }
+
+    .rdList_BetLadder.ladder span {
+        line-height: 12px;
+    }
+
+.table_title.ladder, .table_title.mora {
+    height: 84px;
+}
+
+    .table_title.ladder .DT_style {
+        margin-top: 10px;
+    }
+
+    .table_title.ladder .yellow_t, .rdList_BetLadder td .yellow_t {
+        color: #fdb82d;
+    }
+
+    .table_title.ladder .green_t, .rdList_BetLadder td .green_t {
+        color: #48b363;
+    }
+
+@media (min-width: 360px) {
+    .rdList_BetLadder td {
+        height: 15px;
+    }
+
+    .table_title.ladder, .table_title.mora {
+        height: 90px !important;
+    }
+
+    #Ld_ladderend .table_title.ladder .DT_style {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 393px) {
+    .rdList_BetLadder td {
+        height: 18px;
+    }
+
+        .rdList_BetLadder td span {
+            width: 17px;
+            height: 17px;
+            line-height: 18px;
+        }
+
+    .rdList_BetLadder.ladder span {
+        line-height: 16px;
+    }
+
+    .table_title.ladder, .table_title.mora {
+        height: 108px !important;
+    }
+
+        .table_title.ladder .DT_style {
+            margin-top: 18px;
+        }
+
+    #Ld_ladderend .table_title.ladder .DT_style {
+        margin-top: 7px;
+    }
+}
+
+@media (min-width:530px) {
+    .rdList_BetLadder td {
+        height: 23px;
+    }
+
+        .rdList_BetLadder td span {
+            width: 20px;
+            height: 20px;
+            line-height: 22px;
+            font-size: 16px;
+        }
+
+        .rdList_BetLadder td .bg_red {
+            border: 2px solid #ff0000;
+        }
+
+        .rdList_BetLadder td .bg_blue {
+            border: 2px solid #0201ff;
+        }
+
+    .rdList_BetLadder.ladder span {
+        line-height: 18px;
+    }
+
+    .table_title.ladder, .table_title.mora {
+        height: 138px !important;
+    }
+
+        .table_title.ladder .DT_style {
+            margin-top: 26px;
+        }
+
+    #Ld_ladderend .table_title.ladder .DT_style {
+        margin-top: 4px;
+    }
+}
+
+@media (min-width:600px) {
+    .rdList_BetLadder td {
+        height: 26px;
+    }
+
+        .rdList_BetLadder td span {
+            width: 23px;
+            height: 23px;
+            line-height: 28px;
+            font-size: 19px;
+        }
+
+    .rdList_BetLadder.ladder span {
+        line-height: 22px;
+    }
+
+    .table_title.ladder, .table_title.mora {
+        height: 156px !important;
+    }
+
+        .table_title.ladder .DT_style {
+            margin-top: 28px;
+        }
+}
+
+@media (min-width:700px) {
+    #Ld_ladderend .table_title.ladder .DT_style {
+        margin-top: 9px;
+    }
+
+    .table_title.ladder .DT_style {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width:768px) {
+    .rdList_BetLadder td {
+        height: 35px;
+    }
+
+        .rdList_BetLadder td span {
+            width: 33px;
+            height: 33px;
+            line-height: 34px;
+            font-size: 25px;
+        }
+
+    .rdList_BetLadder.ladder span {
+        line-height: 30px;
+    }
+
+    .rdList_BetLadder td .bg_red {
+        border: 3px solid #ff0000;
+    }
+
+    .rdList_BetLadder td .bg_blue {
+        border: 3px solid #0201ff;
+    }
+
+    .table_title.ladder, .table_title.mora {
+        height: 217px !important;
+    }
+
+        .table_title.ladder .DT_style {
+            margin-top: 35px;
+        }
+
+    #Ld_ladderend .table_title.ladder .DT_style {
+        margin-top: 11px;
+    }
+}
+
+@media (min-width:834px) {
+    .DT_style.ladder {
+        margin-top: 48px;
+    }
+}
+/*bet射龍門*/
+
+.table_title02 {
+    position: absolute;
+    margin: auto;
+    top: 1px;
+    left: 0;
+    z-index: 1;
+    width: 20%;
+    height: 150px;
+    background-color: #f1eff2;
+    border-right: 1px solid #aaaaaa;
+}
+
+    .table_title02 > div {
+        border-bottom: 2px solid #aaaaaa;
+        box-sizing: border-box;
+        height: 50px;
+        display: table;
+        width: 100%;
+    }
+
+        .table_title02 > div:nth-child(2) {
+            height: 51px;
+        }
+
+        .table_title02 > div:last-child {
+            box-sizing: border-box;
+            height: 50px;
+            display: table;
+            width: 100%;
+        }
+
+    .table_title02 div > span {
+        display: block;
+        font-size: 0.75em;
+        line-height: 1.7em;
+    }
+
+
+.table_title > .betGoal_style:first-child {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+}
+
+.betGoal_t {
+    position: absolute;
+    left: 0.5%;
+    width: 20%;
+    height: 113px;
+}
+
+    .betGoal_t a {
+        position: relative;
+        display: block;
+        height: 38px;
+        line-height: 38px;
+        font-size: 0.75em;
+    }
+
+.table_title > .betGoal_style:first-child, .table_title > .betGoal_style:last-child {
+    border: 0;
+}
+
+.ba_dataInput_T.betGoal .ba_blue_block:before, .ba_dataInput_T.betGoal .ba_blue_block:after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.betGoal_style a > .ba_blue_block {
+    position: absolute;
+    margin: auto;
+    top: 11px;
+    right: 23%;
+    left: auto;
+}
+
+    .betGoal_style a > .ba_blue_block:before, .betGoal_style a > .ba_blue_block:after {
+        width: 2px;
+        height: 15px;
+    }
+
+.betGoal_style a > .detail_green_line {
+    width: 2px;
+    height: 14px;
+    position: absolute;
+    margin: auto;
+    top: 12px;
+    right: 12%;
+    left: auto;
+}
+
+.betGoal_style a > .detail_red_ring {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #dc0000;
+    position: absolute;
+    margin: auto;
+    top: 12px;
+    right: 4%;
+    left: auto;
+}
+
+.ba_dataInput_T.betGoal {
+    height: 113px;
+}
+
+    .ba_dataInput_T.betGoal td {
+        height: 18px;
+    }
+
+        .ba_dataInput_T.betGoal td:first-child {
+            border-left: 1px solid #c4c4c4;
+        }
+
+@media (min-width:360px) {
+    .table_title02 {
+        height: 200px;
+    }
+
+        .table_title02 div > span {
+            font-size: 0.75em;
+        }
+
+        .table_title02 > div {
+            height: 66px;
+        }
+
+            .table_title02 > div:nth-child(2), .table_title02 > div:last-child {
+                height: 67px;
+            }
+}
+
+@media (min-width:400px) {
+    .table_title02 {
+        height: 218px;
+    }
+
+        .table_title02 div > span {
+            font-size: 0.9em;
+        }
+
+        .table_title02 > div {
+            height: 72px;
+        }
+
+            .table_title02 > div:nth-child(2), .table_title02 > div:last-child {
+                height: 73px;
+            }
+
+    .betGoal_style a {
+        font-size: 0.85em;
+        height: 40px;
+        line-height: 40px;
+    }
+
+        .betGoal_style a > .ba_blue_block {
+            top: 13px;
+            right: 22%;
+        }
+
+        .betGoal_style a > .detail_red_ring {
+            width: 13px;
+            height: 13px;
+            right: 6%;
+            top: 14px;
+        }
+}
+
+@media (min-width:414px) {
+    .betGoal_style a > .detail_red_ring {
+        right: 5%;
+    }
+}
+
+@media (min-width:530px) {
+    .table_title02 {
+        height: 225px;
+    }
+
+        .table_title02 div > span {
+            font-size: 1em;
+        }
+
+        .table_title02 > div {
+            height: 75px;
+        }
+
+            .table_title02 > div:nth-child(2), .table_title02 > div:last-child {
+                height: 76px;
+            }
+
+    .ba_dataInput_T.betGoal {
+        height: 131px;
+    }
+
+        .ba_dataInput_T.betGoal td {
+            height: 20px;
+        }
+
+        .ba_dataInput_T.betGoal .detail_red_ring {
+            width: 20px;
+            height: 20px;
+        }
+
+        .ba_dataInput_T.betGoal .detail_green_line {
+            height: 21px;
+        }
+
+        .ba_dataInput_T.betGoal .ba_blue_block:before, .ba_dataInput_T.betGoal .ba_blue_block:after {
+            height: 23px;
+        }
+
+    .betGoal_t a {
+        height: 44px;
+        line-height: 44px;
+        font-size: 1em;
+    }
+
+    .betGoal_style a > .ba_blue_block:before, .betGoal_style a > .ba_blue_block:after {
+        width: 3px;
+        height: 21px;
+    }
+
+    .betGoal_style a > .detail_green_line {
+        width: 3px;
+        height: 18px;
+    }
+
+    .betGoal_style a > .ba_blue_block {
+        top: 10px;
+    }
+
+    .betGoal_style a > .detail_green_line {
+        top: 12px;
+        right: 15%;
+    }
+
+    .betGoal_style a > .detail_red_ring {
+        width: 18px;
+        height: 18px;
+        border: 3px solid #dc0000;
+        top: 13px;
+        right: 7%;
+    }
+}
+
+@media (min-width:600px) {
+    .table_title02 {
+        height: 252px;
+    }
+
+        .table_title02 div > span {
+            font-size: 1.1em;
+        }
+
+        .table_title02 > div {
+            height: 84px;
+        }
+
+            .table_title02 > div:nth-child(2), .table_title02 > div:last-child {
+                height: 85px;
+            }
+}
+
+@media (min-width:744px) {
+    .table_title02 {
+        height: 312px;
+    }
+
+        .table_title02 div > span {
+            font-size: 1.1em;
+        }
+
+        .table_title02 > div {
+            height: 108px;
+        }
+
+            .table_title02 > div:nth-child(2), .table_title02 > div:last-child {
+                height: 103px;
+            }
+}
+
+@media (min-width:768px) {
+    .table_title02 {
+        height: 360px;
+    }
+
+        .table_title02 div > span {
+            font-size: 1.5em;
+        }
+
+        .table_title02 > div {
+            height: 120px;
+        }
+
+            .table_title02 > div:nth-child(2), .table_title02 > div:last-child {
+                height: 121px;
+            }
+
+    .betGoal_t {
+        left: 1%;
+        width: 19.5%;
+    }
+
+        .betGoal_t a {
+            font-size: 1.5em;
+            height: 81px;
+            line-height: 81px;
+        }
+
+    .ba_dataInput_T.betGoal {
+        height: 245px;
+    }
+
+        .ba_dataInput_T.betGoal td {
+            height: 40px;
+        }
+
+    .betGoal_style a > .ba_blue_block:before, .betGoal_style a > .ba_blue_block:after {
+        width: 3px;
+        height: 28px;
+    }
+
+    .betGoal_style a > .detail_green_line {
+        width: 3px;
+        height: 25px;
+    }
+
+    .betGoal_style a > .detail_red_ring {
+        width: 25px;
+        height: 25px;
+    }
+
+    .betGoal_style a > .ba_blue_block {
+        top: 25px;
+        right: 21%;
+    }
+
+    .betGoal_style a > .detail_green_line {
+        top: 26px;
+        right: 15%;
+    }
+
+    .betGoal_style a > .detail_red_ring {
+        top: 26px;
+        right: 8%;
+    }
+
+    .ba_dataInput_T.betGoal .ba_blue_block:before, .ba_dataInput_T.betGoal .ba_blue_block:after {
+        height: 38px;
+    }
+
+    .ba_dataInput_T.betGoal .detail_red_ring {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ba_dataInput_T.betGoal .detail_green_line {
+        height: 30px;
+    }
+}
+
+@media (min-width:768px) {
+    .betGoal_style a > .detail_green_line {
+        top: 26px;
+        right: 17%;
+    }
+
+    .betGoal_style a > .detail_red_ring {
+        top: 26px;
+        right: 11%;
+    }
+}
+
+.Pkcolor01 {
+    color: #fe0000;
+}
+
+.Pkcolor02 {
+    color: #f75504;
+}
+
+.Pkcolor03 {
+    color: #f7a400;
+}
+
+.Pkcolor04 {
+    color: #55b230;
+}
+
+.Pkcolor05 {
+    color: #1f9cee;
+}
+
+.Pkcolor06 {
+    color: #482a8e;
+}
+
+.Bet_betArea {
+    width: 100%;
+    margin: 0 auto;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    overflow: hidden;
+}
+
+    .Bet_betArea.bot {
+        border-radius: 0;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+.Bet_betBox {
+    position: relative;
+    float: left;
+    width: 33%;
+    padding: 2% 0;
+    background-color: #ebebeb;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    font-size: 0.85em;
+}
+
+    .Bet_betBox.PkDisc {
+        width: 33.3333%;
+        padding: 2px 0 0;
+        font-size: 0.7em;
+    }
+
+.detail_tL, .detail_tR {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+.detail_tL {
+    float: left;
+    margin-left: 15%;
+}
+
+.detail_tR {
+    float: right;
+    margin-right: 20%;
+}
+
+.bot .detail_tR {
+    margin-right: 5%;
+}
+
+.Bet_betBox.PkDisc .detail_tL, .Bet_betBox.PkDisc .detail_tR {
+    font-weight: normal;
+}
+
+.t_red {
+    color: #fb1c22;
+}
+
+.t_green {
+    color: #339700;
+}
+
+.t_blue {
+    color: #007eff;
+}
+
+@media (min-width:350px) {
+    .PkDisc .Ball_red, .PkDisc .Ball_green, .PkDisc .Ball_Indigo {
+        width: 13px;
+        height: 13px;
+    }
+
+    .Bet_betBox.PkDisc {
+        padding: 2px 0;
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width:375px) {
+    .detail_tL, .detail_tR {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width:400px) {
+    .PkDisc .Ball_red, .PkDisc .Ball_green, .PkDisc .Ball_Indigo {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Bet_betBox.PkDisc {
+        padding: 4px 0 2px;
+    }
+}
+
+@media (min-width:600px) {
+    .PkDisc .Ball_red, .PkDisc .Ball_green, .PkDisc .Ball_Indigo {
+        width: 16px;
+        height: 16px;
+    }
+
+    .Bet_betBox.PkDisc {
+        padding: 5px 0;
+    }
+}
+
+@media (min-width:768px) {
+    .PkDisc .Ball_red, .PkDisc .Ball_green, .PkDisc .Ball_Indigo {
+        width: 26px;
+        height: 26px;
+    }
+
+    .Bet_betBox.PkDisc {
+        padding: 6px 0;
+    }
+}
+
+/*BET猜拳路子-猜拳*/
+.rdList_Bot03.RPSElec_m {
+    height: 84px;
+}
+
+.mora .table_title_sub {
+    padding-left: 10%;
+}
+
+.mora .DT_style {
+    margin-top: 6px;
+}
+
+    .mora .DT_style div span {
+        line-height: 2em;
+    }
+
+    .mora .DT_style div .btn_num {
+        width:40%;
+        float: right;        
+    }
+
+.rdList_BetLadder.Mora td .bg_blue {
+    border: 2px solid #0201ff;
+}
+
+.rdList_BetLadder.Mora td .bg_red {
+    border: 2px solid #ff0000;
+}
+
+.rdList_BetLadder.Mora td .bg_green {
+    border: 2px solid #2ca900;
+}
+
+@media (min-width: 360px) {
+    .rdList_Bot03.RPSElec_m {
+        height: 90px;
+    }
+
+    .mora .DT_style div span {
+        line-height: 2.2em;
+    }
+}
+
+@media (min-width:400px) {
+    .rdList_Bot03.RPSElec_m {
+        height: 108px;
+    }
+
+    .rdList_BetLadder.Mora td .bg_blue {
+        border: 3px solid #0201ff;
+    }
+
+    .rdList_BetLadder.Mora td .bg_red {
+        border: 3px solid #ff0000;
+    }
+
+    .rdList_BetLadder.Mora td .bg_green {
+        border: 3px solid #2ca900;
+    }
+}
+
+@media (min-width:530px) {
+    .rdList_Bot03.RPSElec_m {
+        height: 138px;
+    }
+}
+
+@media (min-width:600px) {
+    .rdList_Bot03.RPSElec_m {
+        height: 156px;
+    }
+
+    .mora .DT_style {
+        margin-top: 4px;
+    }
+
+    .mora .table_title_sub {
+        padding-left: 15%;
+    }
+
+    .mora .DT_style div span {
+        line-height: 2.5em;
+    }
+
+    .rdList_BetLadder.Mora td .bg_blue {
+        border: 5px solid #0201ff;
+    }
+
+    .rdList_BetLadder.Mora td .bg_red {
+        border: 5px solid #ff0000;
+    }
+
+    .rdList_BetLadder.Mora td .bg_green {
+        border: 5px solid #2ca900;
+    }
+}
+
+@media (min-width:768px) {
+    .rdList_Bot03.RPSElec_m {
+        height: 210px;
+    }
+
+    .mora .DT_style {
+        margin-top: 17px;
+    }
+}
+
+/*BET猜拳路子-莊閑和*/
+.M_red_t {
+    color: #fe7566;
+}
+
+.M_blue_t {
+    color: #399ffc;
+}
+
+.M_yellow_t {
+    color: #f8b601;
+}
+
+.Mora td img {
+    display:block;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.divlongBetUpdate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(127,127,127);
+    font-size: 0.95em;
+    width: 80%;
+}
+
+.divlongBetNoCount {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+@media (min-width:375px) {
+    .divlongBetUpdate {
+        font-size: 0.95em;
+    }
+}
+
+@media (min-width:400px) {
+    .divlongBetUpdate {
+        font-size: 1em;
+    }
+
+    .divlongBetNoCount {
+        font-size: 1em;
+    }
+}
+
+@media (min-width:768px) {
+    .divlongBetUpdate {
+        font-size: 1.3em;
+    }
+
+    .divlongBetNoCount {
+        margin-top: 70px;
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width:1024px) {
+    .Mora td img {
+        height: 34px;
+    }
+}
+
+/*射龍門-冷熱*/
+.betGoal_wrap {
+    margin: 1% 0 1%;
+    display: flex;
+    align-items: center;
+}
+
+.betGoal_list.icon img {
+    width: 20px;
+    height: auto;
+}
+
+.betGoal_list .ballRed, .betGoal_list .ballBlue {
+    display: block;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 2px;
+    text-align: center;
+    border: 2px solid #e55050;
+    box-sizing: border-box;
+    color: #e55050;
+    font-weight: bold;
+}
+
+.betGoal_list .ballBlue {
+    border: 2px solid #4f9aff !important;
+    color: #4f9aff !important;
+}
+
+.betGoal_list {
+    float: left;
+    margin-left: 7.5%;
+}
+
+    .betGoal_list span {
+        display: table;
+        margin: 1% auto 0;
+        font-size: 0.8em;
+        color: #ff0000;
+    }
+
+    .betGoal_list .blue_t {
+        color: #007eff;
+    }
+
+@media (min-width:360px) {
+    .betGoal_list {
+        margin-left: 8%;
+    }
+
+        .betGoal_list.icon img {
+            width: 24px;
+        }
+
+        .betGoal_list .ballRed, .betGoal_list .ballBlue {
+            width: 26px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 1em;
+        }
+
+        .betGoal_list span {
+            font-size: 0.9em;
+        }
+}
+
+@media (min-width:380px) {
+    .betGoal_list {
+        margin-left: 8.5%;
+    }
+}
+
+@media (min-width:400px) {
+    .betGoal_wrap {
+        margin: 2% 0 1%;
+    }
+
+    .betGoal_list.icon img {
+        width: 26px;
+    }
+
+    .betGoal_list .ballRed, .betGoal_list .ballBlue {
+        width: 28px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width:530px) {
+    .betGoal_list {
+        margin-left: 9.5%;
+    }
+}
+
+@media (min-width:600px) {
+    .betGoal_list {
+        margin-left: 10.3%;
+    }
+}
+
+@media (min-width:744px) {
+    .betGoal_wrap {
+        margin: 2% 0 2%;
+    }
+
+    .betGoal_list {
+        margin-left: 9.7%;
+    }
+
+        .betGoal_list.icon img {
+            width: 38px;
+        }
+
+        .betGoal_list span {
+            font-size: 1em;
+        }
+
+        .betGoal_list .ballRed, .betGoal_list .ballBlue {
+            width: 38px;
+            height: 54px;
+            line-height: 54px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .betGoal_list span {
+            font-size: 1.2em;
+        }
+}
+
+/*射龍門-猜數字*/
+.Orange_T {
+    color: #ff7f27;
+}
+
+.Gaol_number {
+    height: 114px;
+}
+
+@media (min-width:360px) {
+    .Gaol_number {
+        height: 119.5px;
+    }
+}
+
+@media (min-width:400px) {
+    .Gaol_number {
+        height: 134px;
+    }
+}
+
+@media (min-width:530px) {
+    .Gaol_number tr td {
+        height: 21.2px;
+    }
+}
+
+@media (min-width:600px) {
+    .Gaol_number tr td {
+        height: 20.8px;
+    }
+}
+
+@media (min-width:700px) {
+    .Gaol_number tr td {
+        height: 22px;
+    }
+}
+
+@media (min-width:740px) {
+    .Gaol_number tr td {
+        height: 23px;
+    }
+}
+
+@media (min-width:740px) {
+    .Gaol_number tr td {
+        height: 35px;
+    }
+}
+
+/*PK骰*/
+.Pk_HotCold {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+    .Pk_HotCold .title, .Pk_HotCold .dataWraps {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Pk_HotCold .title {
+        width: 14%;
+        justify-content: left;
+        font-size: 0.9em;
+    }
+
+    .Pk_HotCold .dataWraps {
+        width: 86%;
+    }
+
+        .Pk_HotCold .dataWraps .dataItem img {
+            display: block;
+            width: auto;
+            height: 26px;
+            margin: 0 auto;
+            margin-bottom: 5px;
+        }
+
+        .Pk_HotCold .dataWraps .dataItem span {
+            display: block;
+            width: 40px;
+            line-height: 16px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+            color: #ff0000;
+            text-align: center;
+            font-size: 0.7em;
+        }
+
+        .Pk_HotCold .dataWraps .dataItem .blue_t {
+            color: #007eff;
+        }
+
+.line_HotCold {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    height: 1px;
+    background-color: #cccccc;
+}
+
+@media (min-width: 360px) {
+
+    .Pk_HotCold {
+        height: 66px;
+    }
+
+        .Pk_HotCold .title {
+            font-size: 1em;
+        }
+
+        .Pk_HotCold .dataWraps .dataItem img {
+            height: 28px;
+        }
+
+        .Pk_HotCold .dataWraps .dataItem span {
+            width: 42px;
+            line-height: 17px;
+            font-size: 0.8em;
+        }
+}
+
+@media (min-width: 380px) {
+
+    .line_HotCold {
+        width: 92%;
+    }
+
+    .Pk_HotCold {
+        width: 92%;
+        height: 72px;
+    }
+
+        .Pk_HotCold .title {
+            font-size: 1.1em;
+        }
+
+        .Pk_HotCold .dataWraps .dataItem img {
+            height: 30px;
+        }
+
+        .Pk_HotCold .dataWraps .dataItem span {
+            width: 42px;
+            line-height: 18px;
+            font-size: 0.9em;
+        }
+}
+
+@media (min-width: 400px) {
+    .Pk_HotCold {
+        height: 90px;
+    }
+
+        .Pk_HotCold .dataWraps .dataItem img {
+            margin-bottom: 8px;
+        }
+
+        .Pk_HotCold .dataWraps .dataItem span {
+            line-height: 20px;
+        }
+}
+
+@media (min-width: 530px) {
+    .Pk_HotCold .dataWraps .dataItem img {
+        height: 34px;
+    }
+
+    .Pk_HotCold .title {
+        font-size: 1.2em;
+    }
+
+    .Pk_HotCold .dataWraps .dataItem span {
+        width: 48px;
+        line-height: 22px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 710px) {
+    .Pk_HotCold .dataWraps .dataItem img {
+        height: 38px;
+    }
+
+    .Pk_HotCold .title {
+        font-size: 1.4em;
+    }
+
+    .Pk_HotCold .dataWraps .dataItem span {
+        width: 56px;
+        line-height: 24px;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .Pk_HotCold {
+        height: 120px;
+    }
+
+        .Pk_HotCold .dataWraps .dataItem img {
+            height: 42px;
+            margin-bottom: 12px;
+        }
+
+        .Pk_HotCold .title {
+            font-size: 1.5em;
+        }
+
+        .Pk_HotCold .dataWraps .dataItem span {
+            width: 64px;
+            line-height: 26px;
+            font-size: 1.3em;
+        }
+}
+
+/*BET基諾彩*/
+.HotCold .table_title_sub {
+    text-align: center;
+    padding-left: 0;
+}
+
+.HotCold_dataWraps {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    font-size: 0.7em;
+}
+
+    .HotCold_dataWraps.top {
+        height: 48px;
+        border-bottom: 2px solid #aaaaaa;
+    }
+
+    .HotCold_dataWraps .dataItem span:first-child {
+        display: block;
+        width: 22px;
+        height: 22px;
+        line-height: 20px;
+        border: 2px solid #ff7f27;
+        border-radius: 50%;
+        box-sizing: border-box;
+        color: #ff7f27;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-bottom: 2px;
+        text-align: center;
+    }
+
+    .HotCold_dataWraps .dataItem span:last-child {
+        display: block;
+        width: 40px;
+        line-height: 16px;
+        border: 1px solid #cccccc;
+        box-sizing: border-box;
+        text-align: center;
+        color: #ff0000;
+    }
+
+    .HotCold_dataWraps .dataItem span.blue_t {
+        color: #007eff;
+    }
+
+@media (min-width: 360px) {
+    .HotCold_dataWraps {
+        height: 66px;
+    }
+
+        .HotCold_dataWraps.top {
+            height: 65px;
+        }
+
+        .HotCold_dataWraps .dataItem span:first-child {
+            width: 24px;
+            height: 24px;
+            line-height: 22px;
+            margin-bottom: 5px;
+        }
+
+        .HotCold_dataWraps .dataItem span:last-child {
+            width: 44px;
+            line-height: 18px;
+        }
+}
+
+@media (min-width: 380px) {
+    .HotCold_dataWraps {
+        font-size: 0.9em;
+    }
+
+        .HotCold_dataWraps .dataItem span:first-child {
+            width: 26px;
+            height: 26px;
+            line-height: 24px;
+        }
+
+        .HotCold_dataWraps .dataItem span:last-child {
+            width: 48px;
+            line-height: 20px;
+        }
+}
+
+@media (min-width: 400px) {
+    .HotCold_dataWraps {
+        height: 72px;
+        font-size: 1em;
+    }
+
+        .HotCold_dataWraps.top {
+            height: 71px;
+        }
+
+        .HotCold_dataWraps .dataItem span:first-child {
+            width: 30px;
+            height: 30px;
+            line-height: 28px;
+        }
+
+        .HotCold_dataWraps .dataItem span:last-child {
+            width: 54px;
+            line-height: 23px;
+        }
+}
+
+@media (min-width: 530px) {
+    .HotCold_dataWraps {
+        height: 74px;
+        font-size: 1.2em;
+    }
+
+        .HotCold_dataWraps.top {
+            height: 74px;
+        }
+
+        .HotCold_dataWraps .dataItem span:first-child {
+            width: 32px;
+            height: 32px;
+            line-height: 30px;
+            margin-bottom: 6px;
+        }
+
+        .HotCold_dataWraps .dataItem span:last-child {
+            width: 58px;
+            line-height: 24px;
+        }
+}
+
+@media (min-width: 600px) {
+    .HotCold_dataWraps {
+        height: 83px;
+    }
+
+        .HotCold_dataWraps.top {
+            height: 83px;
+        }
+}
+
+@media (min-width: 740px) {
+    .HotCold_dataWraps .dataItem span:first-child {
+        width: 34px;
+        height: 34px;
+        line-height: 32px;
+        margin-bottom: 6px;
+    }
+
+    .HotCold_dataWraps .dataItem span:last-child {
+        width: 66px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .HotCold_dataWraps {
+        height: 120px;
+        font-size: 1.4em;
+    }
+
+        .HotCold_dataWraps.top {
+            height: 118px;
+        }
+
+        .HotCold_dataWraps .dataItem span:first-child {
+            width: 46px;
+            height: 46px;
+            line-height: 44px;
+            margin-bottom: 10px;
+        }
+
+        .HotCold_dataWraps .dataItem span:last-child {
+            width: 86px;
+            line-height: 32px;
+        }
+}
+
+/*BET時時彩*/
+.rdList_Top .betCar, .rdList_Top .betCar02, .rdList_Top .betCar03 {
+    text-align: center;
+    text-align-last: center;
+}
+
+.rdList_Top02.HotCold div {
+    width: 47%;
+}
+
+.rdList_Top02.HotCold select {
+    outline: none;
+    width: 47%;
+    margin: 0 0 0 2%;
+    padding: 0 3%;
+    padding-left: 18%;
+    color: #000 !important;
+    text-align: left;
+}
+
+.rdList_Top03.HotCold {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .rdList_Top03.HotCold select, .rdList_Top03.HotCold div {
+        outline: none;
+        width: 30%;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 3%;
+        padding-left: 8%;
+        margin: 0 1%;
+        background-color: #fff;
+        border: 1px solid #d2d2d2;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #000 !important;
+        text-align: left;
+    }
+
+.betCar_list .ballRed, .betCar_list .ballBlue {
+    display: block;
+    width: 26px;
+    height: 26px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid #e55050;
+    box-sizing: border-box;
+    color: #e55050;
+    font-weight: bold;
+}
+
+.betCar_list .ballBlue {
+    border: 3px solid #4f9aff !important;
+    color: #4f9aff !important;
+}
+
+.betCar_wrap.anytime {
+    width: 90%;
+    margin: 1% auto 1%;
+    justify-content: space-around;
+}
+
+    .betCar_wrap.anytime .betCar_list {
+        margin: 0 auto;
+    }
+
+@media (min-width: 360px) {
+    .betCar_list .ballRed, .betCar_list .ballBlue {
+        width: 28px;
+        height: 28px;
+        line-height: 22px;
+    }
+
+    .rdList_Top03.HotCold select, .rdList_Top03.HotCold div {
+        padding-left: 7%;
+    }
+}
+
+@media (min-width: 400px) {
+    .rdList_Top03.HotCold select, .rdList_Top03.HotCold div {
+        height: 28px;
+        line-height: 28px;
+        font-size: 1em;
+    }
+
+    .betCar_list .ballRed, .betCar_list .ballBlue {
+        width: 32px;
+        height: 32px;
+        line-height: 26px;
+        margin-bottom: 5px;
+        border: 4px solid #e55050;
+    }
+
+    .betCar_list .ballBlue {
+        border: 4px solid #4f9aff !important;
+    }
+
+    .betCar_wrap.anytime {
+        margin: 1.5% auto 1%;
+    }
+}
+
+@media (min-width: 744px) {
+    .rdList_Top03.HotCold select, .rdList_Top03.HotCold div {
+        height: 38px;
+        line-height: 38px;
+        font-size: 1.3em;
+    }
+
+    .betCar_list .ballRed, .betCar_list .ballBlue {
+        width: 36px;
+        height: 36px;
+        line-height: 30px;
+    }
+}
+
+/*動畫_文字更新*/
+.updateBox {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    line-height: 20px;
+    align-items: center;
+    color: #000
+}
+
+    .updateBox ul {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 20px;
+        height: 14px;
+    }
+
+        .updateBox ul li {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background-color: #000
+        }
+
+            .updateBox ul li:nth-child(1) {
+                left: -30%;
+                opacity: 0;
+                animation: move 3s infinite;
+            }
+
+            .updateBox ul li:nth-child(2) {
+                left: -30%;
+                opacity: 0;
+                animation: move2 3s infinite;
+            }
+
+            .updateBox ul li:nth-child(3) {
+                left: -30%;
+                opacity: 0;
+                animation: move3 3s infinite;
+            }
+
+@media (min-width: 350px) {
+    .updateBox ul {
+        width: 26px;
+    }
+}
+
+@media (min-width: 768px) {
+    .updateBox ul {
+        width: 34px;
+    }
+
+        .updateBox ul li {
+            width: 3px;
+            height: 3px;
+        }
+}
+
+@keyframes move {
+    0% {
+        left: -30%;
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.5;
+    }
+
+    30% {
+        left: -30%;
+        opacity: 1;
+    }
+
+    50% {
+        left: 10%;
+        opacity: 1;
+    }
+
+    90% {
+        left: 10%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 90%;
+        opacity: 0;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        left: -30%;
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.5;
+    }
+
+    25% {
+        left: -30%;
+        opacity: 0;
+    }
+
+    45% {
+        left: 40%;
+        opacity: 1;
+    }
+
+    85% {
+        left: 40%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes move3 {
+    0% {
+        left: -30%;
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.5;
+    }
+
+    20% {
+        left: -30%;
+        opacity: 0;
+    }
+
+    40% {
+        left: 70%;
+        opacity: 1;
+    }
+
+    80% {
+        left: 70%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    @keyframes move {
+        0% {
+            left: -20%;
+            opacity: 0;
+        }
+
+        15% {
+            opacity: 0.5;
+        }
+
+        30% {
+            left: -20%;
+            opacity: 1;
+        }
+
+        50% {
+            left: 20%;
+            opacity: 1;
+        }
+
+        90% {
+            left: 20%;
+            opacity: 1;
+        }
+
+        100% {
+            left: 90%;
+            opacity: 0;
+        }
+    }
+
+    @keyframes move2 {
+        0% {
+            left: -20%;
+            opacity: 0;
+        }
+
+        15% {
+            opacity: 0.5;
+        }
+
+        25% {
+            left: -20%;
+            opacity: 0;
+        }
+
+        45% {
+            left: 50%;
+            opacity: 1;
+        }
+
+        85% {
+            left: 50%;
+            opacity: 1;
+        }
+
+        100% {
+            left: 100%;
+            opacity: 0;
+        }
+    }
+
+    @keyframes move3 {
+        0% {
+            left: -20%;
+            opacity: 0;
+        }
+
+        15% {
+            opacity: 0.5;
+        }
+
+        20% {
+            left: -20%;
+            opacity: 0;
+        }
+
+        40% {
+            left: 80%;
+            opacity: 1;
+        }
+
+        80% {
+            left: 80%;
+            opacity: 1;
+        }
+
+        100% {
+            left: 100%;
+            opacity: 0;
+        }
+    }
+}
+
+/*---紅白骰---------------*/
+/*點數*/
+.sicBoRW .ballR {
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: #D11C1C;
+    color: #fff;
+    font-size: 16px;
+}
+
+.sicBoRW .ballW {
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.sicBoRW .ballRW {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+}
+
+@media (min-width:375px) {
+    .sicBoRW tr td {
+        height: 21px;
+    }
+}
+
+@media (min-width:400px) {
+    .sicBoRW tr td {
+        height: 23px;
+    }
+
+    .sicBoRW .ballR, .sicBoRW .ballW, .sicBoRW .ballRW {
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+    }
+}
+
+@media (min-width:530px) {
+    .sicBoRW tr td {
+        height: 24px;
+    }
+}
+
+@media (min-width:768px) {
+    .sicBoRW tr td {
+        height: 38px;
+    }
+
+    .sicBoRW .ballR, .sicBoRW .ballW, .sicBoRW .ballRW {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+/*統計*/
+.sicBoRWbox {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 3%;
+}
+
+    .sicBoRWbox:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+
+    .sicBoRWbox li {
+        float: left;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+        .sicBoRWbox li img {
+            width: 20px;
+        }
+
+        .sicBoRWbox li span {
+            display: block;
+            width: 35px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #CCCCCC;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+@media (min-width:360px) {
+    .sicBoRWbox li img {
+        width: 26px;
+    }
+
+    .sicBoRWbox li span {
+        width: 42px;
+        height: 25px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width:400px) {
+    .sicBoRWbox li img {
+        width: 30px;
+    }
+
+    .sicBoRWbox li span {
+        width: 50px;
+        height: 29px;
+        line-height: 29px;
+    }
+}
+
+@media (min-width:530px) {
+    .sicBoRWbox li span {
+        width: 56px;
+    }
+}
+
+@media (min-width:600px) {
+    .sicBoRWbox li span {
+        width: 62px;
+    }
+}
+
+@media (min-width:768px) {
+    .sicBoRWbox li img {
+        width: 50px;
+    }
+
+    .sicBoRWbox li span {
+        width: 86px;
+        height: 49px;
+        line-height: 49px;
+        font-size: 1.6em;
+    }
+}
+/*---紅白骰 ---------------*/

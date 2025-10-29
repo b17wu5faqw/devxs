@@ -38,6 +38,7 @@ import { useMenuStore } from "@/stores/useMenuStore";
 import { CombinationInput } from "@/components/game-input/CombinationInput";
 import PopupMakeTransfer from "@/components/modal/PopupMakeTransfer";
 import { CombinationInputType3 } from "@/components/game-input/CombinationInputType3";
+import ConfirmMobile from "@/components/modal/mobile/VnLottoElec/ConfirmMobile";
 
 const StyledTableRowResult = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
@@ -138,6 +139,7 @@ const VnLottoElec = () => {
   const [selectedNumbers, setSelectedNumbers] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [resetCombination, setResetCombination] = useState(false);
+  const [drawCount, setDrawCount] = useState(1);
   const { accessToken } = useAuthStore();
   const openModal = useModalStore((state) => state.openModal);
   const closeModal = useModalStore((state) => state.closeModal);
@@ -427,7 +429,7 @@ const VnLottoElec = () => {
   };
 
   const handleClose = async () => {
-    closeModal(MODAL.INFO_MOBILE);
+    closeModal();
     openModal(MODAL.CONFIRM);
   };
 
@@ -452,7 +454,7 @@ const VnLottoElec = () => {
       setTotalChip(0);
       setSelectedNumbers([]);
       setResetCombination(true);
-      closeModal(MODAL.CONFIRM);
+      closeModal();
 
       setTimeout(() => {
         setResetCombination(false);
@@ -1710,11 +1712,12 @@ const VnLottoElec = () => {
         </Flex>
       )}
       <PopupInfoMobile duplicates={duplicates} onConfirm={handleClose} />
-      <PopupConfirmMobile
+      <ConfirmMobile
         drawName={currentDraw?.name ?? ""}
         drawId={currentDraw?.id ?? 0}
         drawNo={currentDraw?.draw_no ?? ""}
         subtypeId={subType?.id ?? 0}
+        inputType={subType?.input_type ?? 1}
         maxBet={subType?.max_bet ?? 1000}
         title={subType?.title ?? ""}
         numbers={numbers}
@@ -1723,6 +1726,7 @@ const VnLottoElec = () => {
         rate={subType?.rate ? Number(subType.rate) : 0}
         prizeRate={subType?.prize_rate ? Number(subType.prize_rate) : 0}
         totalPrize={totalPrize}
+        drawCount={drawCount}
         disabled={isSubmitting}
         onConfirm={handleConfirm}
       />

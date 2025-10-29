@@ -12,7 +12,7 @@ function PopupSuccess() {
   const closeModal = useModalStore((state) => state.closeModal);
   const [countdown, setCountdown] = useState(5);
   const handleClose = () => {
-    closeModal(MODAL.SUCCESS);
+    closeModal();
   };
 
   useEffect(() => {
@@ -24,7 +24,7 @@ function PopupSuccess() {
     const timer = setInterval(() => {
       setCountdown((prev) => {
         if (prev === 1) {
-          closeModal(MODAL.SUCCESS);
+          closeModal();
           return 0;
         }
         return prev - 1;
@@ -87,7 +87,7 @@ function PopupSuccess() {
         <hr />
         <Flex sx={{ gap: "20px", justifyContent: "center", padding: "10px" }}>
           <ButtonConfirm
-            onClick={() => closeModal(MODAL.SUCCESS)}
+            onClick={() => closeModal()}
             sx={{ width: "130px", fontWeight: "600" }}
           >
             Xác nhận <span className="text-[#FFC800] ml-1">({countdown})</span>

@@ -12,6 +12,7 @@ import PopupGame from "@/components/modal/PopupGame";
 import PopupNetwordError from "@/components/modal/PopupNetwordError";
 import useBalanceStore from "@/stores/balanceStore";
 import PopupGameLo from "@/components/modal/PopupGameLo";
+import PopupKuLive from "@/components/modal/PopupKuLive";
 
 const MainLayout = ({ children }: { children: ReactNode }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -110,6 +111,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
     <>
       <PopupGame />
       <PopupGameLo />
+      <PopupKuLive />
       <PopupNetwordError />
       <div>{children}</div>
     </>

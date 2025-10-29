@@ -91,5 +91,29 @@ export const endpoints = {
     betTypes: "sicbo/bet-types",
     sell: "sicbo/sell",
     statisticResult: "sicbo/statistic-result",
+    lastDraw: "sicbo/last-draw",
   },
+  rps: {
+    currentDraw: "rps/current-draw",
+    listLastDraw: "rps/list-last-draw",
+    betTypes: "rps/bet-types",
+    sell: "rps/sell",
+    lastDraw: "rps/last-draw",
+    statisticResult: "rps/statistic-result",
+    statisticDoubleBet: "rps/statistic-double-bet",
+  },
+  kuLive:{
+    getBetTypeList: 'ku-live/bet-rule-lists',
+    getBetRule: 'ku-live/bet-rule',
+    sellKuLiveA: 'ku-live/sell-a',
+    sellKuLiveB: 'ku-live/sell-b',
+    getResult: 'ku-live/result',
+  },
+  kuLotto:{
+    getBetTypeList: 'ku-lotto/bet-rule-lists',
+    getBetRule: 'ku-lotto/bet-rule',
+    sellLottoA: 'ku-lotto/sell-a',
+    sellLottoC: 'ku-lotto/sell-c',
+    getResult: 'ku-lotto/result',
+  }
 };
