@@ -757,7 +757,7 @@ export const useLiveKu = (gType: number = 166) => {
     try {
       // Use the appropriate WebSocket URL based on gType
       const wsUrl = getWebSocketURL(gType);
-      console.log(`🔌 Connecting to WebSocket: ${wsUrl} (gType: ${gType})`);
+      // console.log(`🔌 Connecting to WebSocket: ${wsUrl} (gType: ${gType})`);
       const ws = new WebSocket(wsUrl);
       wsRef.current = ws;
 
@@ -783,7 +783,7 @@ export const useLiveKu = (gType: number = 166) => {
       ws.onmessage = (event) => {
         try {
           const data = JSON.parse(event.data);
-          console.log('📩 WebSocket message received:', data);
+          // console.log('📩 WebSocket message received:', data);
           // Log every incoming action/method from the socket event
           try {
             const actionOrMethod = data.action || data.method || '(none)';
@@ -879,7 +879,7 @@ export const useLiveKu = (gType: number = 166) => {
             const lastFourDigits = gIdString.slice(-4);
             if (gIdString) {
               if(data.gameStatus === "newGame"){
-                console.log('🎯 loginBackBS new game event received, gId:', data.gId, 'draw_no:', lastFourDigits);
+                // console.log('🎯 loginBackBS new game event received, gId:', data.gId, 'draw_no:', lastFourDigits);
                 fetchCurrentDraw();
                 setGameState(prev => ({
                   ...prev,

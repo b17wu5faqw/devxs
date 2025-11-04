@@ -162,8 +162,6 @@ const KuLiveB = () => {
     }
   }, [selectedButton]);
 
-  console.log("subType", subType);
-
   useEffect(() => {
     fetchBetType();
   }, [fetchBetType]);
