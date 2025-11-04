@@ -186,6 +186,16 @@ export interface GameInfo {
 
 export const useLottoKu = (gType: number = 162) => {
   const user = useAuthStore((s) => s.user);
+
+  const getWebSocketURL = (gType: number): string => {
+    if (gType === 166) {
+      return "wss://api-connect.apixoso.net/ws/162";
+    } else if (gType === 167) {
+      return "wss://api-connect.apixoso.net/ws/164";
+    }
+    return "wss://api-connect.apixoso.net/ws/162";
+  };
+
   // ==================== STATES ====================
 
   // WebSocket state
@@ -812,7 +822,8 @@ const fetchGameInfo = useCallback(async (gameType: number = gType): Promise<Game
     setWsState(prev => ({ ...prev, isConnecting: true, error: null }));
 
     try {
-      const ws = new WebSocket(WEBSOCKET_CONSTANTS.URL);
+      const wsUrl = getWebSocketURL(gType);
+      const ws = new WebSocket(wsUrl);
       wsRef.current = ws;
 
       ws.onopen = () => {
@@ -826,12 +837,12 @@ const fetchGameInfo = useCallback(async (gameType: number = gType): Promise<Game
         const timeSuffix = (Date.now() % 100000).toString().padStart(5, '0');
         const usernameWithTime = `${user?.username || 'Guest'}_${timeSuffix}`;
 
-        ws.send(JSON.stringify({
-          action: "request",
-          username: usernameWithTime,
-          gamename: "Ku Lotto",
-          gtype: gType
-        }));
+        // ws.send(JSON.stringify({
+        //   action: "request",
+        //   username: usernameWithTime,
+        //   gamename: "Ku Lotto",
+        //   gtype: gType
+        // }));
       };
 
       ws.onmessage = (event) => {
