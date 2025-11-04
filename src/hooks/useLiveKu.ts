@@ -6,6 +6,17 @@ const BASE_URL1 = "https://api-connect.apixoso.net";
 // const WEBSOCKET_URL = "wss://ku-xs-socket.demogiaothong.com/";
 const WEBSOCKET_URL = "wss://ku-xs-socket.demogiaothong.com";
 const BASE_URL2 = "https://ku-xs-socket.demogiaothong.com";
+
+// Function to get WebSocket URL based on gType
+const getWebSocketURL = (gType: number): string => {
+  if (gType === 166) {
+    return "wss://api-connect.apixoso.net/ws/166";
+  } else if (gType === 167) {
+    return "wss://api-connect.apixoso.net/ws/167";
+  }
+  // Fallback to default URL for other cases
+  return WEBSOCKET_URL;
+};
 const API_ENDPOINTS = {
   BET_RULE_LISTS: `${BASE_URL1}/ku-live/bet-rule-lists`,
   BET_RULE: `${BASE_URL1}/ku-live/bet-rule`,
@@ -19,7 +30,6 @@ const API_ENDPOINTS = {
 } as const;
 
 const WEBSOCKET_CONSTANTS = {
-  URL: WEBSOCKET_URL,
   METHODS: {
     ENTER_LOBBY: "EnterLobby",
     RESULT_HISTORY: "ResultHistory",
@@ -746,7 +756,10 @@ export const useLiveKu = (gType: number = 166) => {
     setWsState(prev => ({ ...prev, isConnecting: true, error: null }));
 
     try {
-      const ws = new WebSocket(WEBSOCKET_CONSTANTS.URL);
+      // Use the appropriate WebSocket URL based on gType
+      const wsUrl = getWebSocketURL(gType);
+      console.log(`🔌 Connecting to WebSocket: ${wsUrl} (gType: ${gType})`);
+      const ws = new WebSocket(wsUrl);
       wsRef.current = ws;
 
       ws.onopen = () => {
@@ -760,18 +773,18 @@ export const useLiveKu = (gType: number = 166) => {
         const timeSuffix = (Date.now() % 100000).toString().padStart(5, '0');
         const usernameWithTime = `${user?.username || 'Guest'}_${timeSuffix}`;
 
-        ws.send(JSON.stringify({
-          action: "request",
-          username: usernameWithTime,
-          gamename: `Ku Live ${gType}`,
-          gtype: gType
-        }));
+        // ws.send(JSON.stringify({
+        //   action: "request",
+        //   username: usernameWithTime,
+        //   gamename: `Ku Live ${gType}`,
+        //   gtype: gType
+        // }));
       };
 
       ws.onmessage = (event) => {
         try {
           const data = JSON.parse(event.data);
-          // console.log('📩 WebSocket message received:', data);
+          console.log('📩 WebSocket message received:', data);
           // Log every incoming action/method from the socket event
           try {
             const actionOrMethod = data.action || data.method || '(none)';
@@ -983,7 +996,7 @@ export const useLiveKu = (gType: number = 166) => {
         error: 'Failed to create WebSocket connection'
       }));
     }
-  }, [gType]);
+  }, [gType, user?.username]);
 
   const disconnectWebSocket = useCallback(() => {
     if (reconnectTimeoutRef.current) {
