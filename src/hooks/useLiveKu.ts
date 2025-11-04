@@ -7,16 +7,6 @@ const BASE_URL1 = "https://api-connect.apixoso.net";
 const WEBSOCKET_URL = "wss://ku-xs-socket.demogiaothong.com";
 const BASE_URL2 = "https://ku-xs-socket.demogiaothong.com";
 
-// Function to get WebSocket URL based on gType
-const getWebSocketURL = (gType: number): string => {
-  if (gType === 166) {
-    return "wss://api-connect.apixoso.net/ws/166";
-  } else if (gType === 167) {
-    return "wss://api-connect.apixoso.net/ws/167";
-  }
-  // Fallback to default URL for other cases
-  return WEBSOCKET_URL;
-};
 const API_ENDPOINTS = {
   BET_RULE_LISTS: `${BASE_URL1}/ku-live/bet-rule-lists`,
   BET_RULE: `${BASE_URL1}/ku-live/bet-rule`,
@@ -164,6 +154,15 @@ export interface HistoryState {
 export const useLiveKu = (gType: number = 166) => {
   const user = useAuthStore((s) => s.user);
   // ==================== STATES ====================
+
+  const getWebSocketURL = (gType: number): string => {
+    if (gType === 166) {
+      return "wss://api-connect.apixoso.net/ws/166";
+    } else if (gType === 167) {
+      return "wss://api-connect.apixoso.net/ws/167";
+    }
+    return "wss://api-connect.apixoso.net/ws/166";
+  };
 
   // WebSocket state
   const [wsState, setWsState] = useState<LiveKuWebSocketState>({
