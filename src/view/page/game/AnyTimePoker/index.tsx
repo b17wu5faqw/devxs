@@ -162,6 +162,8 @@ const KuLiveB = () => {
     }
   }, [selectedButton]);
 
+  console.log("subType", subType);
+
   useEffect(() => {
     fetchBetType();
   }, [fetchBetType]);
@@ -1041,7 +1043,7 @@ const KuLiveB = () => {
             numbers={numbers}
             betChip={betChip}
             totalChip={totalChip}
-            rate={subType?.rate ? Number(subType.rate) : 0}
+            rate={subType?.price_rate ? Number(subType.price_rate) : 0}
             prizeRate={
               odds ? odds : subType?.prize_rate ? Number(subType.prize_rate) : 0
             }
