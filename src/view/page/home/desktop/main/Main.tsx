@@ -86,7 +86,11 @@ function Main() {
   const fetch = useCallback(async () => {
     if (regionId === null) return;
 
-    const resp = await getTypeV2({ regionId: regionId, schedulerId: Number(scheduleId), type: Number(typeId) });
+    const resp = await getTypeV2({
+      regionId: regionId,
+      schedulerId: Number(scheduleId),
+      type: Number(typeId),
+    });
     if (resp.status == 1) {
       setType(resp.data);
       if (activeTab === "4D") {
@@ -396,8 +400,12 @@ function Main() {
   //Optimized handleChangeInput function
   const handleChangeInput = useCallback(
     (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+      const textarea = e.target;
+      const cursorPosition = textarea.selectionStart;
+      const oldValue = textarea.value;
+
       // Remove all non-numeric characters
-      const value = e.target.value.replace(/[^0-9]/g, "");
+      const value = oldValue.replace(/[^0-9]/g, "");
 
       // Format with spaces based on inputType (2D, 3D, or 4D)
       const chars = [];
@@ -409,7 +417,27 @@ function Main() {
         }
       }
 
-      setInput(chars.join(""));
+      const newValue = chars.join("");
+
+      let newCursorPosition = cursorPosition;
+      const spacesBeforeCursorOld =
+        oldValue.substring(0, cursorPosition).split(" ").length - 1;
+      const digitsBeforeCursor = oldValue
+        .substring(0, cursorPosition)
+        .replace(/[^0-9]/g, "").length;
+      const spacesBeforeCursorNew = Math.floor(
+        (digitsBeforeCursor - 1) / inputType
+      );
+      newCursorPosition = digitsBeforeCursor + spacesBeforeCursorNew;
+      newCursorPosition = Math.max(
+        0,
+        Math.min(newCursorPosition, newValue.length)
+      );
+
+      setInput(newValue);
+      setTimeout(() => {
+        textarea.setSelectionRange(newCursorPosition, newCursorPosition);
+      }, 0);
     },
     [inputType]
   );
