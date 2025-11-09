@@ -167,10 +167,34 @@ const VnLotto = () => {
           8: 2,
         };
 
+  // const handleChange = useCallback(
+  //   (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  //     // Remove all non-numeric characters
+  //     const value = e.target.value.replace(/[^0-9]/g, "");
+
+  //     // Format with spaces based on inputType (2D, 3D, or 4D)
+  //     const chars = [];
+  //     for (let i = 0; i < value.length; i++) {
+  //       chars.push(value[i]);
+  //       // Add space after every 2, 3, or 4 digits (based on inputType)
+  //       if ((i + 1) % inputType === 0 && i + 1 !== value.length) {
+  //         chars.push(" ");
+  //       }
+  //     }
+
+  //     setInput(chars.join(""));
+  //   },
+  //   [inputType]
+  // );
+
   const handleChange = useCallback(
     (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+      const textarea = e.target;
+      const cursorPosition = textarea.selectionStart;
+      const oldValue = textarea.value;
+
       // Remove all non-numeric characters
-      const value = e.target.value.replace(/[^0-9]/g, "");
+      const value = oldValue.replace(/[^0-9]/g, "");
 
       // Format with spaces based on inputType (2D, 3D, or 4D)
       const chars = [];
@@ -182,7 +206,27 @@ const VnLotto = () => {
         }
       }
 
-      setInput(chars.join(""));
+      const newValue = chars.join("");
+
+      let newCursorPosition = cursorPosition;
+      const spacesBeforeCursorOld =
+        oldValue.substring(0, cursorPosition).split(" ").length - 1;
+      const digitsBeforeCursor = oldValue
+        .substring(0, cursorPosition)
+        .replace(/[^0-9]/g, "").length;
+      const spacesBeforeCursorNew = Math.floor(
+        (digitsBeforeCursor - 1) / inputType
+      );
+      newCursorPosition = digitsBeforeCursor + spacesBeforeCursorNew;
+      newCursorPosition = Math.max(
+        0,
+        Math.min(newCursorPosition, newValue.length)
+      );
+
+      setInput(newValue);
+      setTimeout(() => {
+        textarea.setSelectionRange(newCursorPosition, newCursorPosition);
+      }, 0);
     },
     [inputType]
   );
